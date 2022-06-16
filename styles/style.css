@@ -1,0 +1,108 @@
+*{
+    padding: o;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+/* body{
+    background-image: url("/assets/images/img2.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+} */
+/* nav .logo{
+    color: white;
+    font-size: 35px;
+    line-height: 80px;
+    float: left;
+    padding: 0 100px;
+    font-weight: bold;
+} */
+
+.email{
+    background-color: brown;
+    height: 20px;
+    width: 100%;
+}
+.email a{
+    float: right;
+    color: white;
+}
+.nav{
+    background: #0082e6;
+    height: 80px;
+    width: 100%;
+    margin-bottom: 0;
+}
+nav ul{
+    float: right;
+    margin: 20px;
+}
+nav ul li{
+    display: inline-block;
+    line-height: 50px;
+    padding: 0 5px;
+}
+nav ul li a{
+    color: white;
+    font-size: 20px;
+    padding: 7px 13px;
+    border-radius: 5px;
+    /* text-transform: uppercase; */
+}
+a.active, a:hover{
+    background-color: #1b9bff;
+    transition: .5s;
+}
+.images{
+   margin-top: 2px;
+   background-size: cover;
+}
+
+
+.container{
+    max-width: 1170px;
+    margin: auto;
+   
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+ul{
+    list-style: none;
+}
+.footer{
+    background-color: #0082e6;
+    padding: 20px 0;
+}
+.footer-col{
+    width: 25%;
+    padding: 0 15px;
+}
+.footer-col h4{
+    font-size: 18px;
+    color: #ffffff;
+    text-transform: capitalize;
+    margin-bottom: 35px;
+    font-weight: 500;
+    position: relative;
+}
+.footer-col h4::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    background-color: #e91e63;
+    height: 2px;
+    box-sizing: border-box;
+    width: 50px;
+}
+.footer-col ul li:not(:last-child){
+    margin-bottom: 10px;
+}
+.footer-col ul li a{
+    font-size: 16px;
+    text-transform: capitalize;
+}
