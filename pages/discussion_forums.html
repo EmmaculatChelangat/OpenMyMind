@@ -4,9 +4,154 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Discussion Forums</title>
+    <link rel="stylesheet" href="../styles/style.css">
+    <style>
+      
+        /* style inputs with type="text", select elements and textareas */
+        input[type=text], select, textarea {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+            margin-top: 6px;
+            margin-bottom: 16px;
+            resize: vertical;
+        }
+        input[type=tel] {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+            margin-top: 6px;
+            margin-bottom: 16px;
+            resize: vertical
+        }
+        /* style the submit button with a specific background color */
+        input[type=submit]{
+            background-color: #04aa6d;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        /* When moving the mouse over the submit button, add a darker green color */
+        input[type=submit]:hover {
+            background-color: #45a049;
+        }
+
+        /* Add a background color and some padding around the form */
+        .forums {
+            border-radius: 5px;
+            background-color: #f2f2f2;
+            padding: 20px;
+        }
+
+
+    </style>
 </head>
 <body>
+    <!-- navbar -->
+    <div class="email">
+        <a href="#">openmymind@gmail.com</a>
+        </div>
+        
+        <nav class="nav">
+            <!-- <label class="logo">OpenMyMind</label> -->
+            <ul>
+                <li><a class="active" href="/">Home</a></li>
+                <li><a href="#">About Mental Health</a></li>
+                <li><a href="/pages/login.html">login</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Blogs</a></li>
+                <li><a href="/pages/discussion_forums.html">Discussion Forums</a></li>
+                <li><a href="#">Testimonials</a></li>
+            </ul>
+        </nav>
+        <!-- discussion forum -->
+        <div class="forums" >
+            <form action="get">
+                <label for="fname">Username</label>
+                <input type="text" name="Username" id="Username" placeholder="Your Username.."><br>
+                <label for="phone number">Phone number</label>
+                <input type="tel" name="phone number" id="phone number" placeholder="Your phone number" maxlength="10"><br>
+
+                <label for="location">Gender</label><br>
+                <input type="radio" id="gender" name="gender" value="female">
+                <label>female</label>
+                <input type="radio" id="gender1" name="gender" value="male">
+                <label>male</label><br><br>
+                
+                <label for="location">Location</label>
+                <select>
+                    <option value="Select location ">Select Your Location</option>
+                    <option value="Nairobi">Nairobi</option>
+                    <option value="Kisumu">Kisumu</option>
+                    <option value="Eldoret">Eldoret</option>
+                    <option value="Kericho">Kericho</option>
+                    <option value="Migori">Migori</option>
+                </select><br>
+
+                <label for="Type of care">Type of Service</label>
+                <select>
+                    <option value="Select Type of Service">Select Type of care</option>
+                    <option value="Individual therapy">Individual therapy</option>
+                    <option value="Child therapy">Child therapy</option>
+                    <option value="Couple counselling">Couple counselling</option>
+                    <option value="Family therapy">Family therapy</option>
+                    <option value="Medication management">Child</option>
+                </select><br>
+
+                <label for="subject">Subject</label>
+                <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+            
+                <input type="submit" value="Submit">
+
+            </form>
+        </div>
+        <!-- footer -->
+        <footer>
+            <footer class="footer">
+                <div class="container">
+                    <div class="row">
+                        <div class="footer-col">
+                            <h4>OpenMyMind</h4>
+                            <ul>
+                                <li><a href="#"></a>About Us</li>
+                                <li><a href="#"></a>Our services</li>
+                                <li><a href="#"></a>privacy policy</li>
+                                <li><a href="#"></a>affiliate program </li>
+                            </ul>
+                        </div>
+                        <div class="footer-col">
+                            <h4>get help</h4>
+                            <ul>
+                                <li><a href="#"></a>FAQ</li>
+                                <!-- <li><a href="#"></a>shipping fee</li> -->
+                                <li><a href="#"></a>returns</li>
+                                <li><a href="#"></a>order status</li>
+                                <li><a href="#"></a>payment options</li>
+                            </ul>
+                        </div>
+                       
+                        <div class="footer-col">
+                            <h4>Follow Us</h4>
+                            <div class="social-links">
+                                <a href="#"><i class="fab fa-github"></i></a>
+                                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                                <a href="#"><i class="fab fa-twitter"></i></a>
+                                <a href="#"><i class="fa-solid fa-envelope"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>    
+        </footer>
+
     
 </body>
 </html>

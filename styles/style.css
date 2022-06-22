@@ -5,12 +5,28 @@
     list-style: none;
     box-sizing: border-box;
 }
-/* body{
+body{
+    margin: 0;
+    padding: 0;
+    /* padding-bottom: 20px; */
     background-image: url("/assets/images/img2.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
     background-size: cover;
-} */
+    background-position: center;
+    font-family: sans-serif;
+}
+span{
+    color: #2ecc71;
+    font-weight: bolder;
+}
+h1{
+    text-align: center;
+    margin-top: 100px;
+}
+#head{
+    text-align: center;
+    padding-top: 200px;
+}
+
 /* nav .logo{
     color: white;
     font-size: 35px;
@@ -30,14 +46,20 @@
     color: white;
 }
 .nav{
-    background: #0082e6;
+    background: gray;
     height: 80px;
     width: 100%;
     margin-bottom: 0;
+    position: fixed;
+    top: 0;
+    
 }
 nav ul{
     float: right;
     margin: 20px;
+    /* Making the navbar appear only when the page gets scrolled down */
+    position: fixed;
+    top: 0;
 }
 nav ul li{
     display: inline-block;
@@ -49,18 +71,28 @@ nav ul li a{
     font-size: 20px;
     padding: 7px 13px;
     border-radius: 5px;
+   
     /* text-transform: uppercase; */
 }
 a.active, a:hover{
     background-color: #1b9bff;
     transition: .5s;
 }
+/* background image */
+html, body{
+    height: 100%;
+}
 .images{
-   margin-top: 2px;
-   background-size: cover;
+    margin-top: 0%;
+    height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
 }
 
-
+/* footer */
 .container{
     max-width: 1170px;
     margin: auto;
@@ -74,7 +106,7 @@ ul{
     list-style: none;
 }
 .footer{
-    background-color: #0082e6;
+    background-color: gray;
     padding: 20px 0;
 }
 .footer-col{

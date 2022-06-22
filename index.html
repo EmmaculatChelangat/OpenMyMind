@@ -8,14 +8,26 @@
     <link rel="stylesheet" href="/styles/style.css">
     <!-- font awesome cdn -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        .search{
+            padding-left: 0px;
+            padding-right: 0px;
+        }
+    </style>
 </head>
 <body>
-    <div class="email">
-    <a href="#">openmymind@gmail.com</a>
-    </div>
+   
     
     <nav class="nav">
-        <!-- <label class="logo">OpenMyMind</label> -->
+       
+
+        <div class="email">
+            <a href="#">openmymind@gmail.com</a>
+            <div class="logo">
+                <img src="/assets/images/logo.jpg" alt="logo" height="50px" width="50px">
+            </div>
+            </div>
+            
         <ul>
             <li><a class="active" href="/">Home</a></li>
             <li><a href="#">About Mental Health</a></li>
@@ -23,13 +35,38 @@
             <li><a href="#">Services</a></li>
             <li><a href="#">Contact</a></li>
             <li><a href="#">Blogs</a></li>
-            <li><a href="#">Discussion Forums</a></li>
+            <li><a href="/pages/discussion_forums.html">Discussion Forums</a></li>
             <li><a href="#">Testimonials</a></li>
+            <input class="search" type="text" name="Search" placeholder="Search">
+            <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
         </ul>
     </nav>
+    
     <div class="images"> 
-    <img src="/assets/images/img2.jpg" alt="My pictures" height="500px" width="1350px">
+        
+            <h1>Welcome and Find the best therapist for yourself</h1>
+            <h2 id="head">OpenMyMind offer services like: <span class="input"></span></h2>
+       
 </div>
+
+<script type="text/javascript" src="js/script.js"></script>
+    <!-- typed.js mattboldt cdn -->
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script>
+      var typed = new Typed(".input", {
+        strings: [
+          "Family therapy.",
+          "Individual therapy.",
+          "Child therapy.",
+          "couple counselling.",
+          "medication management.",
+        ],
+        typeSpeed: 70,
+        backspeed: 60,
+        loop: true,
+      });
+    </script>
+
 
 <section>
     <footer>
@@ -77,6 +114,7 @@
             </div>
         </footer>    
     </footer>
+</section>
 
    
 </body>

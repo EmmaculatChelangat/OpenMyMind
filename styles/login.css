@@ -1,17 +1,28 @@
+/*  */
+*{
+    padding: o;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
 body{
     margin: 0;
     padding: 0;
-    background-image: url("/assets/images/img1.jpggit");
+    /* padding-bottom: 20px; */
+    background-image: url("/assets/images/img1.jpg");
     background-size: cover;
     background-position: center;
     font-family: sans-serif;
 }
 .log-inbox{
+    /* margin-bottom: 30px; */
     width: 320px;
     height: 420px;
     background-color: #000;
     color: #fff;
-    top: 50%;
+    top: 70%;
     left: 50%;
     position: absolute;
     transform: translate(-50%,-50%);
@@ -20,6 +31,7 @@ body{
 
 }
 .avatar{
+    /* margin-bottom: 100px; */
     width: 100px;
     height: 100px;
     border-radius: 50%;
@@ -77,3 +89,57 @@ h1{
 .log-inbox a:hover{
     color: #ffc107;
 }
+
+/* navbar */
+/* body{
+    background-image: url("/assets/images/img2.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+} */
+/* nav .logo{
+    color: white;
+    font-size: 35px;
+    line-height: 80px;
+    float: left;
+    padding: 0 100px;
+    font-weight: bold;
+} */
+
+.email{
+    background-color: brown;
+    height: 20px;
+    width: 100%;
+}
+.email a{
+    float: right;
+    color: white;
+}
+.nav{
+    background: #0082e6;
+    height: 80px;
+    width: 100%;
+    margin-bottom: 0;
+}
+nav ul{
+    float: right;
+    margin: 20px;
+}
+nav ul li{
+    display: inline-block;
+    line-height: 50px;
+    padding: 0 5px;
+}
+nav ul li a{
+    color: white;
+    font-size: 20px;
+    padding: 7px 13px;
+    border-radius: 5px;
+    /* text-transform: uppercase; */
+}
+a.active, a:hover{
+    background-color: #1b9bff;
+    transition: .5s;
+}
+
+/* footer */
