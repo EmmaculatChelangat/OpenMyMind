@@ -10,6 +10,7 @@ body{
     padding: 0;
     /* padding-bottom: 20px; */
     background-image: url("/assets/images/img2.jpg");
+    background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     font-family: sans-serif;
@@ -20,21 +21,31 @@ span{
 }
 h1{
     text-align: center;
-    margin-top: 100px;
+    margin-top: 200px;
 }
 #head{
     text-align: center;
-    padding-top: 200px;
+    padding-top: 150px;
 }
+.join{
+    color: #333;
+    margin: 15px;
+    font-weight: 400;
+    display: inline-block;
+    text-decoration: none;
+    padding: 14px 40px;
+    background-image: linear-gradient(to right, #df4881, #c430d7);
+    font-size: 20px;
+    border-radius: 30px;
+    border-top-right-radius: 0;
+    transition: 0.5s;
+    margin-left: 50%;
+    margin-top: 80px
 
-/* nav .logo{
-    color: white;
-    font-size: 35px;
-    line-height: 80px;
-    float: left;
-    padding: 0 100px;
-    font-weight: bold;
-} */
+}
+.join:hover{
+    border-top-right-radius:30px ;
+}
 
 .email{
     background-color: brown;
@@ -75,8 +86,12 @@ nav ul li a{
     /* text-transform: uppercase; */
 }
 a.active, a:hover{
-    background-color: #1b9bff;
+    background-color: #2ecc71;
     transition: .5s;
+}
+.search{
+    padding: 7px 13px;
+    margin-right: 1px;
 }
 /* background image */
 html, body{

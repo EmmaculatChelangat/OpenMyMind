@@ -19,7 +19,7 @@ body{
 .log-inbox{
     /* margin-bottom: 30px; */
     width: 320px;
-    height: 420px;
+    height: 430px;
     background-color: #000;
     color: #fff;
     top: 70%;
@@ -90,21 +90,6 @@ h1{
     color: #ffc107;
 }
 
-/* navbar */
-/* body{
-    background-image: url("/assets/images/img2.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-} */
-/* nav .logo{
-    color: white;
-    font-size: 35px;
-    line-height: 80px;
-    float: left;
-    padding: 0 100px;
-    font-weight: bold;
-} */
 
 .email{
     background-color: brown;

@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our services</title>
+    <!-- font awesome cdn link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="/styles/style.css">
+</head>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap');
+*{
+    font-family: 'Open Sans', sans-serif;
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+    text-transform: capitalize;
+}
+body{
+    background: #eee;
+}
+.heading{
+    text-align: center;
+    font-size: 35px;
+    padding: 20px 0;
+    color: blueviolet;
+    margin-top: 60px;
+}
+.box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    /* grid-template-columns: 1fr 1fr 1fr; */
+    grid-gap: 15px;
+    padding: 20px;
+}
+.box-container .box{
+    padding: 10px;
+    border-radius: 10px;
+    background: #fff;
+    border: 2px solid blueviolet;
+    text-align: center;
+}
+.box-container .box .icon{
+    margin-top: 10px;
+}
+.box-container .box .icon span{
+    margin: 10px 0;
+    font-size: 35px;
+    color: #666;
+}
+.box-container .box .title{
+    color: blueviolet;
+    font-size: 20px;
+}
+.box-container .box p{
+    font-size: 13px;
+    color: #666;
+    padding: 10px;
+}
+.box-container .box a{
+    color: blueviolet;
+    text-decoration: none;
+    display: block;
+    padding: 10px 0;
+    font-size: 17px;
+    cursor: pointer;
+}
+.box-container .box a:hover{
+    color: #666;
+}
+
+
+/* animation */
+.animation{
+        width: 50px;
+        height: 50px;
+        background-color: chartreuse;
+        position: relative;
+        animation-name: example;
+        animation-duration: 4s;
+        /* animation-iteration-count: 5; */
+        animation-iteration-count: infinite;
+    }
+    @keyframes example{
+        0% {background-color: blue; left: 0px; top: 0px;}
+        25% {background-color: blueviolet; left: 1300px; top: 0px;}
+        50% {background-color: green; left: 1300px; top: 950px;}
+        75% {background-color: red; left: 0px; top: 950px;}
+        100% {background-color: cyan; left: 0px; top: 0px;}
+    }
+</style>
+<body>
+    <nav class="nav">
+        <div class="email">
+            <a href="#">openmymind@gmail.com</a>
+            <div class="logo">
+                <img src="/assets/images/logo.jpg" alt="logo" height="50px" width="50px">
+            </div>
+            </div>
+            
+        <ul>
+            <li><a class="active" href="/">Home</a></li>
+            <li><a href="#">About Mental Health</a></li>
+            <li><a href="/pages/login.html">login</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Blogs</a></li>
+            <li><a href="/pages/discussion_forums.html">Discussion Forums</a></li>
+            <li><a href="/pages/testimonials.html">Testimonials</a></li>
+            <input class="search" type="text" name="Search" placeholder="Search">
+            <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+        </ul>
+    </nav>
+
+    <!-- animation -->
+    <div class="animation"></div>
+
+    
+    <!-- services -->
+    <h1 class="heading">Our Services</h1>
+    <div class="box-container">
+        <div class="box">
+            <div class="icon">
+                <span class="fas fa-code"></span>
+            </div>
+            <h3 class="title">General Services</h3>
+            <p>General health care settings represent an important resource for the mental health care in the community. There is ample evidence that emotional stress is often related to physical illness and that many physical disorders coexist with psychological disorders.</p>
+            <a href="#">read more <i class="fas fa-angle-double-right"></i></a>
+        </div>
+
+        <div class="box">
+            <div class="icon">
+                <span class="fas fa-tools"></span>
+            </div>
+            <h3 class="title">Family therapy</h3>
+            <p>Family therapy is a type of treatment designed to help with issues that specifically affect families' mental health and functioning. It can help individual family members build stronger relationships,.</p>
+            <a href="#">read more <i class="fas fa-angle-double-right"></i></a>
+        </div>
+
+        <div class="box">
+            <div class="icon">
+                <span class="fas fa-paint-brush"></span>
+            </div>
+            <h3 class="title">Individual therapy</h3>
+            <p>
+                Image result for individual therapy mental health
+                Individual counseling (sometimes called psychotherapy, talk therapy, or treatment) is a process through which clients work one-on-one with a trained mental health clinician in a safe, caring, and confidential environment..</p>
+            <a href="#">read more <i class="fas fa-angle-double-right"></i></a>
+        </div>
+
+        <div class="box">
+            <div class="icon">
+                <span class="fas fa-child"></span>
+            </div>
+            <h3 class="title">Child therapy</h3>
+            <p>Child and adolescent mental health problems account for a significant proportion of the local and global burden of disease and is recognized as a growing public health concern in need of adequate services.</p>
+            <a href="#">read more <i class="fas fa-angle-double-right"></i></a>
+        </div>
+
+
+        <div class="box">
+            <div class="icon">
+                <span class="fas fa-bullhorn"></span>
+            </div>
+            <h3 class="title">couple counselling</h3>
+            <p>Couples therapy is a type of psychotherapy in which a therapist with clinical experience working with couples helps two people involved in a romantic relationship gain insight into their relationship, resolve conflict and improve relationship satisfaction utilizing a variety of therapeutic interventions.</p>
+            <a href="#">read more <i class="fas fa-angle-double-right"></i></a>
+        </div>
+
+
+        <div class="box">
+            <div class="icon">
+                <span class="fas fa-prescription"></span>
+            </div>
+            <h3 class="title">medication management</h3>
+            <p>
+                Medication management services contribute to: Improved patient use and administration of all medications. Improved percentage of patients meeting their healthcare goals. Reduced side effects and duplication, as well as drug interactions, of all medications..</p>
+            <a href="#">read more <i class="fas fa-angle-double-right"></i></a>
+        </div>
+
+
+    </div>
+
+
+
+    <!-- <h1 class="title">Services offered</h1>
+<div class="services">
+    <div class="box1" style="background-color: aqua;">
+        <img src="/assets/images/img3.jpg" alt="my first image" height="100px" width="100px">
+        <h1>General Services</h1>
+        <p>Here, we offer any general help that you are are in need of</p>
+    </div>
+
+    <div class="box2" style="background-color: yellowgreen;">
+        <img src="/assets/images/img1.jpg" alt="my first image" height="100px" width="100px">
+        <h1>General Services</h1>
+        <p>Here, we offer any general help that you are are in need of</p>
+    </div>
+
+    <div class="box3" style="background-color: green;">
+        <img src="/assets/images/img4.jpg" alt="my first image" height="100px" width="100px">
+        <h1>General Services</h1>
+        <p>Here, we offer any general help that you are are in need of</p>
+    </div>
+
+    <div class="box4" style="background-color: orangered">
+        <h1>General Services</h1>
+        <img src="/assets/images/img5.jpg" alt="my first image" height="100px" width="100px">
+        <p>Here, we offer any general help that you are are in need of</p>
+    </div>
+
+    <div class="box5" style="background-color: gray">
+        <h1>General Services</h1>
+        <img src="/assets/images/img3.jpg" alt="my first image" height="100px" width="100px">
+        <p>Here, we offer any general help that you are are in need of</p>
+    </div>
+
+    <div class="box6" style="background-color: rgb(44, 44, 2);">
+        <h1>General Services</h1>
+        <img src="/assets/images/img5.jpg" alt="my first image" height="100px" width="100px">
+        <p>Here, we offer any general help that you are are in need of</p>
+    </div>
+
+    <div class="box7" style="background-color: rgb(21, 255, 0);">
+        <h1>General Services</h1>
+        <img src="/assets/images/img1.jpg" alt="my first image" height="100px" width="100px">
+        <p>Here, we offer any general help that you are are in need of</p>
+    </div>
+</div> -->
+
+    <!-- footer -->
+    <section>
+        <footer>
+            <footer class="footer">
+                <div class="container">
+                    <div class="row">
+                        <div class="footer-col">
+                            <h4>Company</h4>
+                            <ul>
+                                <li><a href="#"></a>About Us</li>
+                                <li><a href="#"></a>Our services</li>
+                                <li><a href="#"></a>privacy policy</li>
+                                <li><a href="#"></a>affiliate program </li>
+                            </ul>
+                        </div>
+
+                        <div class="footer-col">
+                            <h4>get help</h4>
+                            <ul>
+                                <li><a href="#"></a>FAQ</li>
+                                <!-- <li><a href="#"></a>shipping fee</li> -->
+                                <li><a href="#"></a>returns</li>
+                                <li><a href="#"></a>order status</li>
+                                <li><a href="#"></a>payment options</li>
+                            </ul>
+                        </div>
+                       
+                        <div class="footer-col">
+                            <h4>Follow Us</h4>
+                            <div class="social-links">
+                                <a href="#"><i class="fab fa-github"></i></a>
+                                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                                <a href="#"><i class="fab fa-twitter"></i></a>
+                                <a href="#"><i class="fa-solid fa-envelope"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>    
+        </footer>
+    </section>
+
+
+</body>
+</html>
