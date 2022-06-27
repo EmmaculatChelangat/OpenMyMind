@@ -17,12 +17,12 @@ body{
     font-family: sans-serif;
 }
 .log-inbox{
-    /* margin-bottom: 30px; */
+    margin-top: 50px;
     width: 320px;
     height: 430px;
     background-color: #000;
     color: #fff;
-    top: 70%;
+    top: 50%;
     left: 50%;
     position: absolute;
     transform: translate(-50%,-50%);
@@ -41,7 +41,6 @@ body{
 
 }
 h1{
-    margin: 0;
     padding: 0 0 20px;
     text-align: center;
     font-size: 22px;
