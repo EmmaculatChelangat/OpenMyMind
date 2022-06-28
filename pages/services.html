@@ -13,13 +13,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap');
 *{
     font-family: 'Open Sans', sans-serif;
+    font-size: small;
     margin: 0; padding: 0;
     box-sizing: border-box;
     text-transform: capitalize;
 }
-body{
+/* body{
     background: #eee;
-}
+} */
 .heading{
     text-align: center;
     font-size: 35px;
@@ -30,7 +31,7 @@ body{
 .box-container{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-    /* grid-template-columns: 1fr 1fr 1fr; */
+    grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 15px;
     padding: 20px;
 }
@@ -72,23 +73,23 @@ body{
 
 
 /* animation */
-.animation{
+/* .animation{
         width: 50px;
         height: 50px;
         background-color: chartreuse;
         position: relative;
         animation-name: example;
         animation-duration: 4s;
-        /* animation-iteration-count: 5; */
+        animation-iteration-count: 5;
         animation-iteration-count: infinite;
-    }
-    @keyframes example{
+    } */
+    /* @keyframes example{
         0% {background-color: blue; left: 0px; top: 0px;}
         25% {background-color: blueviolet; left: 1300px; top: 0px;}
         50% {background-color: green; left: 1300px; top: 950px;}
         75% {background-color: red; left: 0px; top: 950px;}
         100% {background-color: cyan; left: 0px; top: 0px;}
-    }
+    } */
 </style>
 <body>
     <nav class="nav">
@@ -105,7 +106,7 @@ body{
             <li><a href="/pages/login.html">login</a></li>
             <li><a href="services.html">Services</a></li>
             <li><a href="#">Contact</a></li>
-            <li><a href="#">Blogs</a></li>
+            <li><a href="/pages/blog.html">Blogs</a></li>
             <li><a href="/pages/discussion_forums.html">Discussion Forums</a></li>
             <li><a href="/pages/testimonials.html">Testimonials</a></li>
             <input class="search" type="text" name="Search" placeholder="Search...">
@@ -114,7 +115,7 @@ body{
     </nav>
 
     <!-- animation -->
-    <div class="animation"></div>
+    <!-- <div class="animation"></div> -->
 
     
     <!-- services -->
@@ -182,52 +183,6 @@ body{
 
     </div>
 
-
-
-    <!-- <h1 class="title">Services offered</h1>
-<div class="services">
-    <div class="box1" style="background-color: aqua;">
-        <img src="/assets/images/img3.jpg" alt="my first image" height="100px" width="100px">
-        <h1>General Services</h1>
-        <p>Here, we offer any general help that you are are in need of</p>
-    </div>
-
-    <div class="box2" style="background-color: yellowgreen;">
-        <img src="/assets/images/img1.jpg" alt="my first image" height="100px" width="100px">
-        <h1>General Services</h1>
-        <p>Here, we offer any general help that you are are in need of</p>
-    </div>
-
-    <div class="box3" style="background-color: green;">
-        <img src="/assets/images/img4.jpg" alt="my first image" height="100px" width="100px">
-        <h1>General Services</h1>
-        <p>Here, we offer any general help that you are are in need of</p>
-    </div>
-
-    <div class="box4" style="background-color: orangered">
-        <h1>General Services</h1>
-        <img src="/assets/images/img5.jpg" alt="my first image" height="100px" width="100px">
-        <p>Here, we offer any general help that you are are in need of</p>
-    </div>
-
-    <div class="box5" style="background-color: gray">
-        <h1>General Services</h1>
-        <img src="/assets/images/img3.jpg" alt="my first image" height="100px" width="100px">
-        <p>Here, we offer any general help that you are are in need of</p>
-    </div>
-
-    <div class="box6" style="background-color: rgb(44, 44, 2);">
-        <h1>General Services</h1>
-        <img src="/assets/images/img5.jpg" alt="my first image" height="100px" width="100px">
-        <p>Here, we offer any general help that you are are in need of</p>
-    </div>
-
-    <div class="box7" style="background-color: rgb(21, 255, 0);">
-        <h1>General Services</h1>
-        <img src="/assets/images/img1.jpg" alt="my first image" height="100px" width="100px">
-        <p>Here, we offer any general help that you are are in need of</p>
-    </div>
-</div> -->
 
     <!-- footer -->
     <section>

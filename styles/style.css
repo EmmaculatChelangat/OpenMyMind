@@ -4,6 +4,11 @@
     text-decoration: none;
     list-style: none;
     box-sizing: border-box;
+
+    font-family: 'Audiowide', cursive;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Sofia', cursive;
 }
 body{
     margin: 0;
@@ -11,11 +16,12 @@ body{
     /* padding-bottom: 20px; */
     background-image: url("/assets/images/img2.jpg");
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: 1550px;
     background-position: center;
     font-family: sans-serif;
 }
 span{
+    font-family: 'Roboto', sans-serif;
     color: #2ecc71;
     font-weight: bolder;
 }
@@ -23,9 +29,10 @@ span{
     text-align: center;
     margin-top: 200px;
 }
-#head{
+.headdd{
     text-align: center;
     padding-top: 150px;
+    font-family: 'Roboto', sans-serif;
 }
 .join{
     color: #333;
@@ -39,7 +46,8 @@ span{
     border-radius: 30px;
     border-top-right-radius: 0;
     transition: 0.5s;
-    margin-left: 50%;
+    /* margin-left: 50%; */
+    margin-left: 500px;
     margin-top: 80px
 
 }

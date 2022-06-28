@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blogs</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="/styles/style.css">
+    
+</head>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Roboto:ital@1&family=Sofia&display=swap');
+
+html{
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--dark);
+}
+
+body{
+    background: #ccc;
+    margin: 30px 50px;
+    line-height: 1.4;
+}
+.btn{
+    background: #333;
+    color: #ccc;
+    /* 1rem=14px--rem is responsive */
+    padding: 0.6rem 1.3rem;
+    text-decoration: none;
+    border: 0;
+}
+img{
+    max-width: 100%;
+}
+.wrapper{
+    /* margin-top: 100px; */
+    /* padding-top: 100px; */
+    padding-bottom: 100px;
+    display: grid;
+    grid-gap: 20px;
+}
+
+/* top container */
+.top-container{
+    
+    display: grid;
+    grid-gap: 20px;
+    grid-template-areas: 
+        'showcase showcase top-box-a'
+        'showcase showcase top-box-b';
+}
+/* showcase */
+.showcase{
+    margin-top: 100px;
+    grid-area: showcase;
+    min-height: 400px;
+    background: url("/assets/images/img6.jpg");
+    background-size: cover;
+    background-position: center;
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    box-shadow: var(--shadow);
+}
+.showcase h1{
+    font-size: 4rem;
+    margin-bottom: 0;
+    /* color: black; */
+    /* lower case are converted to uppercase */
+    font-variant: small-caps;
+    /* font-family: 'Poppins', sans-serif; */
+    /* font-family: 'Roboto', sans-serif; */
+    font-family: 'Sofia', cursive;
+    /* text-shadow: 3px 3px 3px #ababab; */
+    text-shadow: 10px 3px 3px #ababab;
+}
+.showcase p{
+    font-size: 1.3rem;
+    margin-top: 0; 
+    color: black;
+    font-family: 'Poppins', sans-serif;
+     
+}
+/* top Box */
+.top-box{
+    
+    background: #fff;
+    display: grid;
+    justify-items: center;
+    padding: 1.5rem;
+}
+
+.top-box-a {
+    margin-top: 100px;
+    grid-area: top-box-a;
+}
+.top-box-b {
+    grid-area: top-box-b;
+}
+
+/* boxes */
+.boxes{
+    margin-top: 50px;
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+
+}
+.box{
+    background: #fff;
+    text-align: center;
+    padding: 1.5rem 2rem;
+}
+/* info */
+.info{
+    font-family: 'Roboto', sans-serif;
+    margin-top: 50px;
+    background: #ccc;
+    display: grid;
+    grid-gap: 30px;
+    grid-template-columns: repeat(2, 1fr);
+    /* grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); */
+    /* padding: 3rem; */
+}
+.inform{
+    font-family: 'Roboto', sans-serif;
+    background: #fff;
+    text-align: center;
+    padding: 1.5rem 2rem;
+}
+
+
+@media(max-width:700px){
+    .top-container{
+       grid-template-areas: 
+       'showcase showcase'
+       'top-box-a top-box-b'; 
+    }
+    .showcase h1{
+        font-size: 2.5rem;
+    }
+    .info{
+        grid-template-columns: 1fr;
+    }
+    .info .btn{
+        display: block;
+        text-align: center;
+        margin: auto;
+    }
+}
+@media(max-width:700px){
+    .top-container{
+       grid-template-areas: 
+       'showcase '
+       'top-box-a '
+       'top-box-b'; 
+    }
+}
+
+</style>
+<body>
+    <!-- navbar -->
+    <nav class="nav">
+        <div class="email">
+            <a href="#">openmymind@gmail.com</a>
+            <div class="logo">
+                <img src="/assets/images/logo.jpg" alt="logo" height="50px" width="50px">
+            </div>
+            </div>
+            
+        <ul>
+            <li><a class="active" href="/">Home</a></li>
+            <li><a href="#">About Mental Health</a></li>
+            <li><a href="/pages/login.html">login</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="/pages/blog.html">Blogs</a></li>
+            <li><a href="/pages/discussion_forums.html">Discussion Forums</a></li>
+            <li><a href="/pages/testimonials.html">Testimonials</a></li>
+            <input class="search" type="text" name="Search" placeholder="Search...">
+         
+        </ul>
+    </nav>
+
+
+ <!-- top container -->
+ <section class="top-container">
+    <header class="showcase">
+        <h1>mental health</h1>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet ut sequi consequuntur, quam aperiam magnam?</p>
+        <a href="#" class="btn">Read More</a>
+    </header>
+
+    <div class="top-box top-box-a">
+        <h2>Welcome</h2>
+        <p class="description">Welcome to my lifestyle & mental health blog, where I speak candidly about mental health, chronic illness and the general ups and downs of life.</p>
+        <a href="#" class="btn">Read More</a>
+    </div>
+
+    <div class="top-box top-box-b">
+        <h3>social links</h3>
+            <div class="social-links">
+                <a href="#"><i class="fab fa-github"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fa-solid fa-envelope"></i></a>
+            </div>
+    </div>
+</section>
+
+<!-- Boxes Section -->
+<section class="boxes">
+    <div class="box">
+        <i class="fa fa-pie-chart fa-4x" aria-hidden="true"></i>
+        <h3>Analytics</h3>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reiciendis, adipisci?</p>
+    </div>
+
+    <div class="box">
+        <i class="fa fa-globe fa-4x" aria-hidden="true"></i>
+        <h3>Marketing</h3>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reiciendis, adipisci?</p>
+    </div>
+
+    <div class="box">
+        <i class="fa fa-cog fa-4x" aria-hidden="true"></i>
+        <h3>Development</h3>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reiciendis, adipisci?</p>
+    </div>
+
+    <div class="box">
+        <i class="fa fa-users fa-4x" aria-hidden="true"></i>
+        <h3>Support</h3>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reiciendis, adipisci?</p>
+    </div>
+
+</section>
+
+<!-- info section -->
+<section class="info">
+
+    <div class="inform">
+    <img src="/assets/images/img7.jpg" alt="">
+  
+            <a href=""><h2>100 LIFE GOALS(WITH FREE GOAL PLANNER)</h2></a>
+            <p>Do you want a motivating list of goals, that consists of things you know you can actually achieve in the near future? Well, in this post I've rounded up 100 life goals which are a...</p>
+            <a href="#" class="btn">Learn More</a>
+    </div>
+
+
+    <div class="inform">
+    <img src="/assets/images/img8.jpg" alt="">
+        <a href="#"><h2>10 THINGS TO DO WHEN BORED AT NIGHT</h2></a>
+        <p>If you're like me and struggle with insomnia, it can be super frustrating trying to think of things to do when bored at night. No one wants to be lying in bed doing nothing for...</p>
+        <a href="#" class="btn">Learn More</a>
+    </div>
+
+
+    <div class="inform">
+    <img src="/assets/images/img6.jpg" alt="">
+        <a href="#"><h2>5 QUICK TIPS FOR MANAGING MENTAL HEALTH AT CHRISTMAS</h2></a>
+        <p>Managing mental health at Christmas can be tough. It's such a busy time of year. There's LOTS of socialising, drinking, eating and pressure to spend money. While it is a magical time for many, it...</p>
+        <a href="#" class="btn">Learn More</a>
+    </div>
+
+
+    <div class="inform">
+    <img src="/assets/images/img7.jpg" alt="">
+        <a href="#"><h2>LYING BECAUSE OF SOCIAL ANXIETY</h2></a>
+        <p>I spent years lying because of social anxiety. Not in a malicious way or in a way to hurt and deceive people but because of the way that social anxiety had deceived me. The truth...</p>
+        <a href="#" class="btn">Learn More</a>
+    </div>
+
+
+    <div class="inform">
+    <img src="/assets/images/img8.jpg" alt="">
+        <a href=""><h2>50 SELF HARM ALTERNATIVES THAT WON'T MAKE THINGS WORSE</h2></a>
+        <p>Not all self harm alternatives are made equally. Often when you search for self harm alternatives or you're given advice to try something different from self harm, you are told to hold an ice cube...</p>
+        <a href="#" class="btn">Learn More</a>
+    </div>
+
+    <div class="inform">
+    <img src="/assets/images/img5.jpg" alt="" height="330px" width="560px">
+        <a href=""><h2>TO ALL OF THE KIDS BEING BULLIED AT SCHOOL</h2></a>
+        <p>A while ago, I wrote a letter on my blog to my high school bullies. Even if they would never read it, it was incredibly cathartic for me to write and put out there. Lots of...</p>
+        <a href="#" class="btn">Learn More</a>
+    </div>
+</section> 
+
+
+    <div class="back icon">
+        <a href="#"><i class="fa fa-chevron-left fa-4x" aria-hidden="true"></i><i class="fa fa-chevron-left fa-4x" aria-hidden="true"><strong style="font-size: 1.6rem">OlDER POSTS</strong> </i></a> 
+    </div>
+
+
+
+     <!-- footer -->
+     <section>
+        <footer>
+            <footer class="footer">
+                <div class="container">
+                    <div class="row">
+                        <div class="footer-col">
+                            <h4>Company</h4>
+                            <ul>
+                                <li><a href="#"></a>About Us</li>
+                                <li><a href="#"></a>Our services</li>
+                                <li><a href="#"></a>privacy policy</li>
+                                <li><a href="#"></a>affiliate program </li>
+                            </ul>
+                        </div>
+
+                        <div class="footer-col">
+                            <h4>get help</h4>
+                            <ul>
+                                <li><a href="#"></a>FAQ</li>
+                                <!-- <li><a href="#"></a>shipping fee</li> -->
+                                <li><a href="#"></a>returns</li>
+                                <li><a href="#"></a>order status</li>
+                                <li><a href="#"></a>payment options</li>
+                            </ul>
+                        </div>
+                       
+                        <div class="footer-col">
+                            <h4>Follow Us</h4>
+                            <div class="social-links">
+                                <a href="#"><i class="fab fa-github"></i></a>
+                                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                                <a href="#"><i class="fab fa-twitter"></i></a>
+                                <a href="#"><i class="fa-solid fa-envelope"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>    
+        </footer>
+    </section>
+
+
+    
+</body>
+</html>

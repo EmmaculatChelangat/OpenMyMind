@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact</title>
+    <link rel="stylesheet" href="/styles/style.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Audiowide&family=Poppins:wght@300;400;500;600;700&family=Roboto:ital,wght@0,500;0,700;1,400;1,900&family=Sofia&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <style>
+    body {
+      background: beige;
+    }
+    .contact-top {
+      margin-top: 150px;
+      display: grid;
+      grid-template-columns: repeat(200px, 1fr);
+      padding: 1.5rem 2rem;
+      background: #ccc;
+      margin-left: 200px;
+      margin-right: 200px;
+    }
+    .contact-head {
+      text-align: center;
+      font-variant: small-caps;
+      font-weight: 700;
+      font-size: 3.1em;
+      font-family: "Poppins", sans-serif;
+      color: white;
+      text-shadow: 3px 3px 3px #eb7171;
+    }
+    .contact-info p {
+      /* font-family: 'Poppins', sans-serif; */
+    }
+    .contact {
+      font-size: 2em;
+    }
+    .adverts h5 p{
+      font-family: "Times New Roman", Times, serif;
+      padding-top: 2em;
+      font-size: 2em;
+    }
+    .guest {
+      padding-top: 2em;
+    }
+    .form {
+      padding-top: 2em;
+      /* width:12.5em */
+    }
+    .form input {
+      width: 50%;
+    }
+    .form input[type="submit"] {
+      width: 15%;
+      margin-left: 30%;
+    }
+    .recaptcha input[type="checkbox"] {
+      margin-left: 10px;
+      /* background-color: rebeccapurple; */
+    }
+    .contact-image {
+      padding-top: 50px;
+      margin-left: 200px;
+    }
+  </style>
+  <body>
+    <!-- navbar -->
+    <nav class="nav">
+      <div class="email">
+        <a href="#">openmymind@gmail.com</a>
+        <div class="logo">
+          <img
+            src="/assets/images/logo.jpg"
+            alt="logo"
+            height="50px"
+            width="50px"
+          />
+        </div>
+      </div>
+
+      <ul>
+        <li><a class="active" href="/">Home</a></li>
+        <li><a href="#">About Mental Health</a></li>
+        <li><a href="/pages/login.html">login</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="/contact.html">Contact</a></li>
+        <li><a href="/pages/blog.html">Blogs</a></li>
+        <li><a href="/pages/discussion_forums.html">Discussion Forums</a></li>
+        <li><a href="/pages/testimonials.html">Testimonials</a></li>
+        <input
+          class="search"
+          type="text"
+          name="Search"
+          placeholder="Search..."
+        />
+      </ul>
+    </nav>
+
+    <section class="contact-top">
+      <div class="contact-info">
+        <h1 class="contact-head">contact</h1>
+        <div class="contact">
+          <h2><strong>contact info:</strong></h2>
+          <p>OpenMyMind</p>
+          <p>openmymind@gmail.com</p>
+          <p>Kisumu</p>
+          <p>40024</p>
+        </div>
+
+        <div class="adverts" >
+          <h5>
+            <strong >ADVERTISING:</strong>
+          </h5>
+          <p >
+            If you're looking to advertise your company or brand on a popular
+            Mental Health blog, I offer several types of advertising and
+            sponsorship's on OpenMyMind so please get in touch for my media kit.
+          </p>
+        </div>
+
+        <h1 class="guest">&#42; Not currently accepting Guest &#42;</h1>
+
+        <form class="form">
+          <p>Name</p>
+          <input type="text" name="name" required /><br />
+          <p>Email</p>
+          <input type="email" name="email" required /><br />
+          <p>Website/URL</p>
+          <input type="url" name="url" /><br />
+          <p>Message</p>
+          <textarea name="message" id="" cols="70" rows="8" required></textarea
+          ><br />
+
+          <!-- recaptcha -->
+          <p>reCAPTCHA</p>
+          <div class="recaptcha">
+            <input type="checkbox" /> i'am not a robot
+            <input type="submit" name="submit" id="" />
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <section class="contact-image">
+      <img src="/assets/images/img10.jpg" alt="" width="950px" height="500px" />
+    </section>
+
+    <section class="contact-top">
+      <div>
+        <h1>LEAVE A REPLY</h1>
+        <p>
+          Your email address will not be published. Required fields are marked
+          &#42;
+        </p>
+        <p>Comment &#42;</p>
+        <textarea name="message" id="" cols="70" rows="8" required></textarea
+        ><br />
+        <p>Name</p>
+        <input type="text" name="name" required />
+        <p>Email</p>
+        <input type="email" name="email" required />
+        <p>Website</p>
+        <input type="url" name="url" />
+
+        <!-- recaptcha -->
+        <p>reCAPTCHA</p>
+        <div class="recaptcha">
+          <input type="checkbox" /> i'am not a robot <br />
+          <!-- <input type="submit" name="submit" id=""> -->
+          <button type="button">Post Comment</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- footer -->
+    <!-- <section>
+    <footer>
+        <footer class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="footer-col">
+                        <h4>Company</h4>
+                        <ul>
+                            <li><a href="#"></a>About Us</li>
+                            <li><a href="#"></a>Our services</li>
+                            <li><a href="#"></a>privacy policy</li>
+                            <li><a href="#"></a>affiliate program </li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-col">
+                        <h4>get help</h4>
+                        <ul>
+                            <li><a href="#"></a>FAQ</li>
+                            <li><a href="#"></a>returns</li>
+                            <li><a href="#"></a>order status</li>
+                            <li><a href="#"></a>payment options</li>
+                        </ul>
+                    </div>
+                   
+                    <div class="footer-col">
+                        <h4>Follow Us</h4>
+                        <div class="social-links">
+                            <a href="#"><i class="fab fa-github"></i></a>
+                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fa-solid fa-envelope"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>    
+    </footer>
+</section> -->
+  </body>
+</html>
