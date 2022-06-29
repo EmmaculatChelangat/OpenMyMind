@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Contact</title>
     <link rel="stylesheet" href="/styles/style.css" />
+    <!-- Load icon library -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -54,20 +56,18 @@
       padding-top: 2em;
       /* width:12.5em */
     }
-    .form input {
+    .form input[type="text"] {
       width: 50%;
     }
     .form input[type="submit"] {
       width: 15%;
       margin-left: 30%;
     }
-    .recaptcha input[type="checkbox"] {
-      margin-left: 10px;
-      /* background-color: rebeccapurple; */
-    }
     .contact-image {
       padding-top: 50px;
       margin-left: 200px;
+      padding-bottom: 10px;
+      /* margin-bottom: 100px; */
     }
   </style>
   <body>
@@ -89,17 +89,12 @@
         <li><a class="active" href="/">Home</a></li>
         <li><a href="#">About Mental Health</a></li>
         <li><a href="/pages/login.html">login</a></li>
-        <li><a href="services.html">Services</a></li>
+        <li><a href="/pages/services.html">Services</a></li>
         <li><a href="/contact.html">Contact</a></li>
         <li><a href="/pages/blog.html">Blogs</a></li>
         <li><a href="/pages/discussion_forums.html">Discussion Forums</a></li>
         <li><a href="/pages/testimonials.html">Testimonials</a></li>
-        <input
-          class="search"
-          type="text"
-          name="Search"
-          placeholder="Search..."
-        />
+        <button type="submit"><i class="fa fa-search"></i></button>
       </ul>
     </nav>
 
@@ -141,7 +136,7 @@
           <!-- recaptcha -->
           <p>reCAPTCHA</p>
           <div class="recaptcha">
-            <input type="checkbox" /> i'am not a robot
+            <input type="checkbox" width="20px"> i'am not a robot <br/>
             <input type="submit" name="submit" id="" />
           </div>
         </form>
@@ -152,7 +147,7 @@
       <img src="/assets/images/img10.jpg" alt="" width="950px" height="500px" />
     </section>
 
-    <section class="contact-top">
+    <section class="contact-top" style="margin-top: 15px;">
       <div>
         <h1>LEAVE A REPLY</h1>
         <p>
@@ -172,7 +167,7 @@
         <!-- recaptcha -->
         <p>reCAPTCHA</p>
         <div class="recaptcha">
-          <input type="checkbox" /> i'am not a robot <br />
+          <input type="checkbox"/> i'am not a robot <br />
           <!-- <input type="submit" name="submit" id=""> -->
           <button type="button">Post Comment</button>
         </div>
@@ -180,11 +175,11 @@
     </section>
 
     <!-- footer -->
-    <!-- <section>
+    <section>
     <footer>
         <footer class="footer">
-            <div class="container">
-                <div class="row">
+            <div class="container2">
+                <div class="row2">
                     <div class="footer-col">
                         <h4>Company</h4>
                         <ul>
@@ -208,16 +203,17 @@
                     <div class="footer-col">
                         <h4>Follow Us</h4>
                         <div class="social-links">
-                            <a href="#"><i class="fab fa-github"></i></a>
-                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                            <a href="#"><i class="fab fa-twitter"></i></a>
-                            <a href="#"><i class="fa-solid fa-envelope"></i></a>
+                          <a href="https://github.com/EmmaculatChelangat/EmmaculatChelangat.git"><i class="fab fa-github"></i></a>
+                          <a href="https://www.linkedin.com/in/emmaculat-chelangat-57696a230?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BvuSKlLITQfGX3QvOju759Q%3D%3D"><i class="fab fa-linkedin-in"></i></a>
+                          <a href="https://twitter.com/chelaathecoder/status/1531721118737997824?t=7RtVofOdj1-rGsEe41NHew&s=19"><i class="fab fa-twitter"></i></a>
+                          <a href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=chelangatemmaculat2744@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+                          <a href="https://www.facebook.com/sharer/sharer.php?u=chelangatemmaculat"><i class="fab fa-facebook"></i></a>
                         </div>
                     </div>
                 </div>
             </div>
         </footer>    
     </footer>
-</section> -->
+</section>
   </body>
 </html>

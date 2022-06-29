@@ -49,6 +49,7 @@ span{
     /* margin-left: 50%; */
     margin-left: 500px;
     margin-top: 80px
+    
 
 }
 .join:hover{
@@ -116,12 +117,12 @@ html, body{
 }
 
 /* footer */
-.container{
+.container2{
     max-width: 1170px;
     margin: auto;
    
 }
-.row{
+.row2{
     display: flex;
     flex-wrap: wrap;
 }

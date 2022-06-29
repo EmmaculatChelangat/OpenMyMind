@@ -29,7 +29,7 @@ body{
     box-sizing: border-box;
     padding: 70px 30px;
     /* The z-index property specifies the stack order of an element.it makes the container appear below the nav */
-    z-index: -1;
+    /* z-index: -1; */
 
 }
 .avatar{
