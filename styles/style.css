@@ -66,6 +66,7 @@ span{
     color: white;
 }
 .nav{
+    overflow: hidden;
     background: gray;
     height: 80px;
     width: 100%;
@@ -94,6 +95,28 @@ nav ul li a{
    
     /* text-transform: uppercase; */
 }
+/*  */
+@media screen and (max-width: 600px) {
+    .nav.responsive {position: relative;}
+    .nav.responsive .icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    .nav.responsive a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+    .nav.responsive .dropdown {float: none;}
+    /* .topnav.responsive .dropdown-content {position: relative;}
+    .topnav.responsive .dropdown .dropbtn {
+      display: block;
+      width: 100%;
+      text-align: left;
+    } */
+  }
+  /*  */
 a.active, a:hover{
     background-color: #2ecc71;
     transition: .5s;

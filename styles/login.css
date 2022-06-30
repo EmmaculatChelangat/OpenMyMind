@@ -20,8 +20,8 @@ body{
     margin-top: 50px;
     width: 320px;
     height: 430px;
-    background-color: #000;
-    color: #fff;
+    background-color: #ccc;
+    color: black;
     top: 50%;
     left: 50%;
     position: absolute;
@@ -62,7 +62,7 @@ h1{
     border-bottom: 1px solid #fff;
     background: transparent;
     outline: 40px;
-    color: #fff;
+    color: black;
     font-size: 16px;
 }
 .log-inbox input[type="submit"]
@@ -79,13 +79,13 @@ h1{
 {
     cursor: pointer;
     background: #ffc107;
-    color: #000;
+    color: darkgray;
 }
 .log-inbox a{
     text-decoration: none;
     font-size: 12px;
     line-height: 20px;
-    color: darkgrey;
+    color: black;
 }
 .log-inbox a:hover{
     color: #ffc107;
