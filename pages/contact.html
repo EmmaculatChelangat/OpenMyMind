@@ -21,7 +21,7 @@
       background: beige;
     }
     .contact-top {
-      margin-top: 150px;
+      margin-top: 50px;
       display: grid;
       grid-template-columns: repeat(200px, 1fr);
       padding: 1.5rem 2rem;
@@ -71,32 +71,38 @@
     }
   </style>
   <body>
-    <!-- navbar -->
-    <nav class="nav">
-      <div class="email">
-        <a href="#">openmymind@gmail.com</a>
-        <div class="logo">
-          <img
-            src="/assets/images/logo.jpg"
-            alt="logo"
-            height="50px"
-            width="50px"
-          />
-        </div>
-      </div>
+    
 
+    <nav>
+     
+      <div class="logo">OpenMyMind</div>
       <ul>
-        <li><a class="active" href="../">Home</a></li>
-        <li><a href="#">About Mental Health</a></li>
-        <li><a href="login.html">login</a></li>
-        <li><a href="services.html">Services</a></li>
-        <li><a href="contact.html">Contact</a></li>
-        <li><a href="blog.html">Blogs</a></li>
-        <li><a href="discussion_forums.html">Discussion Forums</a></li>
-        <li><a href="testimonials.html">Testimonials</a></li>
-        <button type="submit"><i class="fa fa-search"></i></button>
+          <li><a href="../">Home</a></li> 
+          <li><a href="#">About MH</a></li> 
+          <li><a href="#">Features</a>
+              <ul>
+                  
+                  <li><a href="blog.html">Blogs</a></li>
+                  <li><a href="services.html">Services</a></li>
+              </ul>    
+          </li>  
+          <li><a href="#">Community</a>
+              <ul>
+                  <!-- <li><a href="discussion_forums.html">Chat room</a></li> -->
+                  <li><a href="chat.html">Chat room</a></li>
+                  <li><a href="testimonials.html">testimonials</a></li>
+                  <li><a href="#">Resources</a></li>
+                
+              </ul>    
+          </li>  
+          
+          <li><a href="#questions">FAQs</a></li>
+          <li><a href="#">Feedback</a></li>
+          <li><a href="sign up.html">Sign Up</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <!-- <button type="submit"><i class="fa fa-search"></i></button> -->
       </ul>
-    </nav>
+  </nav>
 
     <section class="contact-top">
       <div class="contact-info">

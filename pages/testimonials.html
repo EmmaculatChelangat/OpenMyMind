@@ -4,293 +4,379 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Load icon library -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- fontawesome link -->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Testimonials</title>
     <link rel="stylesheet" href="/styles/style.css">
     <style>
-        /* body{
-            background: #ddd;
-        }
-      
-        .container > div{
-            border: 3px solid #4caf50;
-            padding: 10px;
-            
-        }
-        .container{
-            display: flex;
-            text-align: center;
-            justify-content: space-around;
-            font-size: 20px;
-            margin-top: 70px;
-            
-        }
-        .image1{
-            height: 100px;
-            width: 100px;
-            float: right;
-        }
-        h1{
-            height: 50px;
-            margin: 0;
-        }
-      
-        .person p{
-            text-align: center;
-            align-items: center;
-            justify-content: center;
-        } */
+       
+     
+
         *{
+            font-family: 'nunito', sans-serif;
             margin: 0;
             padding: 0;
             box-sizing: border-box;
+            text-transform: capitalize;
         }
-        body{
-            font-family: 'Roboto';
+        #body{
+            min-height: 100vh;
+            display: flex;
+            flex-wrap: nowrap;
+            align-items: center;
+            justify-content: center;
+            padding-bottom: 70px;
             background: #ccc;
         }
-        .test-header{
-            text-align: center;
-            color: white;
-            background: #f7cac9;
-            width: 25%;
-            margin: auto;
-            margin-top: 5%;
-            padding: 1rem;
+        .container10{
+            position: relative;
+            perspective: 1000px;
+
         }
-        .test-container{
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            grid-gap: 40px;
-            width: 80%;
-            margin: auto;
-            margin-top: 5%;
+
+        .container10 .slide-container10 .slide{
+            border-radius: 5px;
+            background: #fff;
+            box-shadow: 0 5px 10px #3337;
+            width: 450px;
+            padding: 20px;
+            margin: 10px;
+            position: relative;
+            transform-style: preserve-3d;
+            animation: slide .4s linear;
+            
         }
-        img{
-            height: 200px;
-            width: 200px;
+        @keyframes slide{
+            0%{
+                transform: rotateX(180deg);
+            }
+        }
+        .container10 .slide-container10 .slide > *{
+            animation: slideContent .2s linear .4s backwards;
+        }
+        @keyframes slideContent{
+            0%{
+                opacity: 0;
+                transform: scale(.5);
+            }
+        }
+        
+
+        .container10 .slide-container10 .slide .icon{
+            position: absolute;
+            top: 10px; right: 15px;
+            font-size: 90px;
+            color: #2ecc71;
+        }
+        .container10 .slide-container10 .slide .user{
+            display: flex;
+            align-items: center;
+        }
+        .container10 .slide-container10 .slide img{
+            height: 100px;
+            width: 100px;
             border-radius: 50%;
-            margin-left:auto;
-            margin-right: auto;
-            display: block;
-            margin-bottom: 10px;
+            object-fit: cover;
+            margin-right: 10px;
         }
-        .card1{
-            text-align: center;
-            padding: 1.5rem;
-            border-bottom-right-radius: 200px;
-            border-top-left-radius: 200px;
-        }
-        .card-1{
-            border: 4px solid #ff6f61;
-        }
-        .card-2{
-            border: 4px solid #92a3d1;
-        }
-
-        .card-3{
-            border: 4px solid #6e41e9;
-        }
-        .card-4{
-            border: 4px solid #3885a8;
-        }
-
-
-        .card-1 img{
-            border: 3px solid #ff6f61;
-        }
-        .card-2 img{
-            border: 3px solid #92a3d1;
-        }
-
-        .card-3 img{
-            border: 3px solid #6e41e9;
-        }
-        .card-4 img{
-            border: 3px solid #3885a8;
-        }
-
-        .card-1 i{
+        .container10 .slide-container10 .slide .user .user-info h3{
+            color: #333;
             font-size: 20px;
-            margin-bottom: 10px;
-            color: #ff6f61;
         }
-        .card-2 i{
-            font-size: 20px;
-            margin-bottom: 10px;
-            color: #32add1;
+        .container10 .slide-container10 .slide .user .user-info .stars i{
+            color: #2ecc71;
+            font-size: 15px;
         }
-        .card-3 i{
-            font-size: 20px;
-            margin-bottom: 10px;
-            color: #92a8d1;
-        }
-        .card-4 i{
-            font-size: 20px;
-            margin-bottom: 10px;
-            color: #88b44b;
-        }
-        .name{
-            text-transform: uppercase;
-            font-weight: 600;
-            margin-top: 10px;
-        }
-        .job{
-            text-transform: uppercase;
-            opacity: 0.8;
+        .container10 .slide-container10 .slide .text{
+            color: #333;
             font-size: 14px;
-            margin-top: 5px;
-            margin-bottom: 10px;
+            padding-top: 15px;
+            font-style: italic;
+        }
+        .container10 .slide-container10{
+            display: none;
+        }
+        .container10 .slide-container10.active{
+            display: block;
+        }
+        .container10 #next,
+        .container10 #prev {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            height: 50px;
+            width: 50px;
+            line-height: 50px;
+            text-align: center;
+            font-size: 20px;
+            background: #333;
+            cursor: pointer;
+            border-radius: 50%;
+            box-shadow: 0 5px 10px #3337;
 
         }
-
-
+        .container10 #next{
+            right: -70px;
+        }
+        .container10 #prev{
+            left: -70px;
+        }
+        .container10 #next:hover,
+        .container10 #prev:hover{
+            background: #333;
+            color: #fff;
+        }
 
     </style>
 </head>
 <body>
     <!-- navbar -->
-    <div class="email">
-        <a href="#">openmymind@gmail.com</a>
+    <nav>
+        <div class="email">
+            <a href="#">openmymind@gmail.com</a>
+            
         </div>
+       
+        <div class="logo">OpenMyMind</div>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About MH</a></li>  
+            <li><a href="#">Features</a>
+                <ul>
+                    
+                    <li><a href="/pages/blog.html">Blogs</a></li>
+                    <li><a href="/pages/services.html">Services</a></li>
+                </ul>    
+            </li>  
+            <li><a href="#">Community</a>
+                <ul>
+                    <!-- <li><a href="/pages/discussion_forums.html">Chat room</a></li> -->
+                    <li><a href="/pages/chat.html">Chat room</a></li>
+                    <li><a href="/pages/testimonials.html">testimonials</a></li>
+                    <li><a href="#">Resources</a></li>
+                  
+                </ul>    
+            </li>  
+            
+            <li><a href="#questions">FAQs</a></li>
+            <li><a href="#">Feedback</a></li>
+            <li><a href="/pages/sign up.html">Sign Up</a></li>
+            <li><a href="/pages/contact.html">Contact</a></li>
+            
+            <!-- <button type="submit"><i class="fa fa-search"></i></button> -->
+        </ul>
+    </nav>
+
+
+<div id="body">
+    <div class="container10">
+
+        <div class="slide-container10 active">
+            <div class="slide">
+                <i class="fas fa-quote-right icon"></i>
+                <div class="user">
+                    <img src="/assets/images/img1.jpg" alt="" >
+                    <div class="user-info">
+                        <h3>John Doe</h3>
+                        
+                            
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </div>
+
+                        
+                    </div>
+                </div>
+                <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum id unde provident, odit nihil ea. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi aut facilis ex velit, expedita accusantium doloribus non ipsa sapiente eius sed neque, adipisci est consequuntur maxime nisi commodi rerum impedit.</p>
+
+
+            </div>
+
+        </div>
+
+        <div class="slide-container10">
+            <div class="slide">
+                <i class="fas fa-quote-right icon"></i>
+                <div class="user">
+                    <img src="/assets/images/img2.jpg" alt="" >
+                    <div class="user-info">
+                        <h3>Rono Dennis</h3>
+                        
+                            
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </div>
+
+                        
+                    </div>
+                </div>
+                <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum id unde provident, odit nihil ea. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem sequi est alias repellat ratione provident vitae quisquam ad, laborum rem laudantium mollitia perferendis nostrum repellendus harum itaque assumenda aperiam. Adipisci?</p>
+
+
+            </div>
+
+        </div>
+
+        <div class="slide-container10">
+            <div class="slide">
+                <i class="fas fa-quote-right icon"></i>
+                <div class="user">
+                    <img src="/assets/images/img3.jpg" alt="" >
+                    <div class="user-info">
+                        <h3>John Smith</h3>
+                        
+                            
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </div>
+
+                        
+                    </div>
+                </div>
+                <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum id unde provident, odit nihil ea. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Expedita repellat sint nobis doloribus, molestiae consequuntur quas quasi mollitia soluta nemo. Dolorum veritatis quisquam assumenda eos, quam non natus reprehenderit praesentium. </p>
+
+
+            </div>
+
+        </div>
+
+
+        <div class="slide-container10">
+            <div class="slide">
+                <i class="fas fa-quote-right icon"></i>
+                <div class="user">
+                    <img src="/assets/images/img4.jpg" alt="" >
+                    <div class="user-info">
+                        <h3>William Johnson</h3>
+                        
+                            
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </div>
+
+                        
+                    </div>
+                </div>
+                <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum id unde provident, odit nihil ea. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos sed dolor repellat velit ipsam enim tempore aliquam animi ullam? Minima dolor suscipit, ab consequuntur dolores sequi voluptatem necessitatibus adipisci quam.</p>
+
+
+            </div>
+
+        </div>
+        <div id="next" class="fas fa-chevron-right" onclick="next()"></div>
+        <div id="prev" class="fas fa-chevron-left"  onclick="prev()"></div>
+
+
+    </div>
+    <script>
+        let slides = document.querySelectorAll('.slide-container10')
+        let index = 0;
+
+        function next(){
+            slides[index].classList.remove('active');
+            index = (index + 1) % slides.length;
+            slides[index].classList.add('active');
+        }
+
+        function prev(){
+            slides[index].classList.remove('active');
+            index = (index - 1 + slides.length) % slides.length;
+            slides[index].classList.add('active');
+        }
+    </script>
+
+</div>
+
+<!-- footer -->
+<section>
+    <footer>
+        <footer class="footer">
+            <div class="container2">
+                <div class="row2">
+                    <div class="footer-col">
+                        <h4>Company</h4>
+                        <ul>
+                            <li><a href="#"></a>About Us</li>
+                            <li><a href="#"></a>Our services</li>
+                            <li><a href="#"></a>privacy policy</li>
+                            <li><a href="#"></a>affiliate program </li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>get help</h4>
+                        <ul>
+                            <li><a href="#"></a>FAQ</li>
+                            <!-- <li><a href="#"></a>shipping fee</li> -->
+                            <li><a href="#"></a>returns</li>
+                            <li><a href="#"></a>order status</li>
+                            <li><a href="#"></a>payment options</li>
+                        </ul>
+                    </div>
+                    
+                    <!-- <div class="footer-col">
+                        <h4>Online Shop</h4>
+                        <ul>
+                            <li><a href="#"></a>Watch</li>
+                            <li><a href="#"></a>bag</li>
+                            <li><a href="#"></a>shoes</li>
+                            <li><a href="#"></a>dress</li>
+                        </ul>
+                    </div> -->
+                    <div class="footer-col">
+                        <h4>Follow Us</h4>
+                        <div class="social-links">
+                            <a href="https://github.com/EmmaculatChelangat/EmmaculatChelangat.git"><i class="fab fa-github"></i></a>
+                            <a href="https://www.linkedin.com/in/emmaculat-chelangat-57696a230?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BvuSKlLITQfGX3QvOju759Q%3D%3D"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="https://twitter.com/chelaathecoder/status/1531721118737997824?t=7RtVofOdj1-rGsEe41NHew&s=19"><i class="fab fa-twitter"></i></a>
+                            <a href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=chelangatemmaculat2744@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+                            <a href="https://www.facebook.com/sharer/sharer.php?u=chelangatemmaculat"><i class="fab fa-facebook"></i></a>
+                          
+    
+                        </div>
+                       
+                    </div>
+
+                    <div class="footer-col">               
+                      <div class="container2">
+                        <p class="lead">Copyright &copy; 2022 OpenMyMind</p>
+                        <a href="#">
+                          <i class="bi bi-arrow-up-circle h1"></i>
+              
+                      </a>
+              
+                      </div>
+                    </div>
+
+   
+                   
         
-        <nav class="nav">
-            <!-- <label class="logo">OpenMyMind</label> -->
-            <ul>
-                <li><a class="active" href="../">Home</a></li>
-                <li><a href="#">About Mental Health</a></li>
-                <li><a href="login.html">login</a></li>
-                <li><a href="services.html">Services</a></li>
-                <li><a href="contact.html">Contact</a></li>
-                <li><a href="blog.html">Blogs</a></li>
-                <li><a href="discussion_forums.html">Discussion Forums</a></li>
-                <li><a href="testimonials.html">Testimonials</a></li>
-                <button type="submit"><i class="fa fa-search"></i></button>
-            </ul>
-        </nav>
-
-
-        <div class="test-header">
-            <h1>Hear what customers Say</h1>
-        </div>
-        <div class="test-container">
-            <div class="card1 card-1">
-                <img src="/assets/images/img10.jpg" alt="">
-                <i class="fas fa-quote-left"></i>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos, magni.</p>
-                <p class="name">Olivia Smith </p>
-                <p class="job">Director</p>
-                <i class="fa fa-star-o" aria-hidden="true"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
+                </div>
             </div>
-
-            <div class="card1 card-2">
-                <img src="/assets/images/img23.jpg" alt="">
-                <i class="fas fa-quote-left"></i>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos, magni.</p>
-                <p class="name">Olivia Smith </p>
-                <p class="job">Technical officer</p>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-            </div>
-
-            <div class="card1 card-3">
-                <img src="/assets/images/img21.jpg" alt="">
-                <i class="fas fa-quote-left"></i>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos, magni.</p>
-                <p class="name">John Doe </p>
-                <p class="job">manager</p>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star-half-alt"></i>
-                
-            </div>
-
-            <div class="card1 card-4">
-                <img src="/assets/images/img4.jpg" alt="">
-                <i class="fas fa-quote-left"></i>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos, magni.</p>
-                <p class="name">Greg Jones</p>
-                <p class="job">Artist</p>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                
-            </div>
-
-        </div>
+            
+        </footer>    
+    </footer>
+</section>
 
 
-<!-- container 1-->
-<!-- <div class="container">
-    <div class="person">
-        <h1>person1</h1>
-        <img class="image1" src="/assets/images/img4.jpg" alt="my picture">
-        <p><i>"I suffer from anxiety and depression and I am a first-generation college student from a family of minimal means. 
-            Decisions about what to study and what college to go to are big decisions with great expenses, all-the-while not 
-            knowing all of the hidden costs, just learning about them along the way. I researched on-line for some kind of 
-            assistance for people like me, and I found Step Up For OpenMyMind Mental Health</i>  <a href="#">Readmore.."</a></p>
-    </div>
+        
 
-    <div class="person">
-        <h1>person2</h1>
-        <img class="image1" src="/assets/images/img5.jpg" alt="my picture">
-        <p><i> "I suffer from anxiety and depression and I am a first-generation college student from a family of minimal means. 
-            Decisions about what to study and what college to go to are big decisions with great expenses, all-the-while not 
-            knowing all of the hidden costs, just learning about them along the way. I researched on-line for some kind of 
-            assistance for people like me, and I found Step Up For OpenMyMind Mental Health </i><a href="#">Readmore.."</a></p>
-    </div>
-
-    <div class="person">
-        <h1>person3</h1>
-        <img class="image1" src="/assets/images/img3.jpg" alt="my picture">
-        <p><i>" I suffer from anxiety and depression and I am a first-generation college student from a family of minimal means. 
-            Decisions about what to study and what college to go to are big decisions with great expenses, all-the-while not 
-            knowing all of the hidden costs, just learning about them along the way. I researched on-line for some kind of 
-            assistance for people like me, and I found Step Up For OpenMyMind Mental Health</i> <a href="#">Readmore.."</a></p>
-    </div>
-</div> -->
-
-<!-- container2 -->
-<!-- <div class="container">
-    <div class="person">
-        <h1>person4</h1>
-        <img class="image1" src="/assets/images/img4.jpg" alt="my picture">
-        <p><i>"I suffer from anxiety and depression and I am a first-generation college student from a family of minimal means. 
-            Decisions about what to study and what college to go to are big decisions with great expenses, all-the-while not 
-            knowing all of the hidden costs, just learning about them along the way. I researched on-line for some kind of 
-            assistance for people like me, and I found Step Up For OpenMyMind Mental Health</i>  <a href="#">Readmore.."</a></p>
-    </div>
-
-    <div class="person">
-        <h1>person5</h1>
-        <img class="image1" src="/assets/images/img5.jpg" alt="my picture">
-        <p><i> "I suffer from anxiety and depression and I am a first-generation college student from a family of minimal means. 
-            Decisions about what to study and what college to go to are big decisions with great expenses, all-the-while not 
-            knowing all of the hidden costs, just learning about them along the way. I researched on-line for some kind of 
-            assistance for people like me, and I found Step Up For OpenMyMind Mental Health </i><a href="#">Readmore.."</a></p>
-    </div>
-
-    <div class="person">
-        <h1>person6</h1>
-        <img class="image1" src="/assets/images/img3.jpg" alt="my picture">
-        <p><i>" I suffer from anxiety and depression and I am a first-generation college student from a family of minimal means. 
-            Decisions about what to study and what college to go to are big decisions with great expenses, all-the-while not 
-            knowing all of the hidden costs, just learning about them along the way. I researched on-line for some kind of 
-            assistance for people like me, and I found Step Up For OpenMyMind Mental Health</i> <a href="#">Readmore.."</a></p>
-    </div>
-</div> -->
 
 </body>
 </html>

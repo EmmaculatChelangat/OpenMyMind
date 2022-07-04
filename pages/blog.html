@@ -47,8 +47,8 @@ img{
     text-align: center;
     font-size: 35px;
     padding: 20px 0;
-    color: blueviolet;
-    margin-top: 60px;
+    color: white;
+    margin-top: 10px;
     text-align: center;
     font-variant: small-caps;
     font-weight: 700;
@@ -68,7 +68,7 @@ img{
 }
 /* showcase */
 .showcase{
-    margin-top: 60px;
+    margin-top: 10px;
     grid-area: showcase;
     min-height: 400px;
     background: url("/assets/images/img6.jpg");
@@ -110,7 +110,7 @@ img{
 }
 
 .top-box-a {
-    margin-top: 60px;
+    margin-top: 10px;
     grid-area: top-box-a;
 }
 .top-box-b {
@@ -130,6 +130,8 @@ img{
 .blog-life{
     text-align: center;
     padding-top: 50px;
+    text-decoration: underline;
+
 
 }
 .box{
@@ -206,28 +208,39 @@ img{
 
 </style>
 <body>
-    <!-- navbar -->
-    <nav class="nav">
-        <div class="email">
-            <a href="#">openmymind@gmail.com</a>
-            <div class="logo">
-                <img src="/assets/images/logo.jpg" alt="logo" height="50px" width="50px">
-            </div>
-            </div>
-            
+   
+    <nav>
+     
+        <div class="logo">OpenMyMind</div>
         <ul>
-            <li><a class="active" href="../">Home</a></li>
-            <li><a href="#">About Mental Health</a></li>
-            <li><a href="login.html">login</a></li>
-            <li><a href="services.html">Services</a></li>
+            <li><a href="../">Home</a></li> 
+            <li><a href="#">About MH</a></li> 
+            <li><a href="#">Features</a>
+                <ul>
+                    
+                    <li><a href="blog.html">Blogs</a></li>
+                    <li><a href="services.html">Services</a></li>
+                </ul>    
+            </li>  
+            <li><a href="#">Community</a>
+                <ul>
+                    <!-- <li><a href="discussion_forums.html">Chat room</a></li> -->
+                    <li><a href="chat.html">Chat room</a></li>
+                    <li><a href="testimonials.html">testimonials</a></li>
+                    <li><a href="#">Resources</a></li>
+                  
+                </ul>    
+            </li>  
+            
+            <li><a href="#questions">FAQs</a></li>
+            <li><a href="#">Feedback</a></li>
+            <li><a href="sign up.html">Sign Up</a></li>
             <li><a href="contact.html">Contact</a></li>
-            <li><a href="blog.html">Blogs</a></li>
-            <li><a href="discussion_forums.html">Discussion Forums</a></li>
-            <li><a href="testimonials.html">Testimonials</a></li>
-            <button type="submit"><i class="fa fa-search"></i></button>
-         
+            <!-- <button type="submit"><i class="fa fa-search"></i></button> -->
         </ul>
     </nav>
+
+
 
 
  <!-- top container -->
@@ -355,7 +368,7 @@ img{
                             <h4>Company</h4>
                             <ul>
                                 <li><a href="#"></a>About Us</li>
-                                <li><a href="#"></a>Our services</li>
+                                <li><a href="services.html"></a>Our services</li>
                                 <li><a href="#"></a>privacy policy</li>
                                 <li><a href="#"></a>affiliate program </li>
                             </ul>
@@ -364,7 +377,7 @@ img{
                         <div class="footer-col">
                             <h4>get help</h4>
                             <ul>
-                                <li><a href="#"></a>FAQ</li>
+                                <li><a href="#questions"></a>FAQ</li>
                                 <!-- <li><a href="#"></a>shipping fee</li> -->
                                 <li><a href="#"></a>returns</li>
                                 <li><a href="#"></a>order status</li>

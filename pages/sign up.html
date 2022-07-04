@@ -28,16 +28,17 @@ body{
     font-family: sans-serif;
 }
 .signup-form{
-    width: 320px;
-    height: 420px;
-    background-color: #ccc;
+    width: 380px;
+    height: 550px;
+    background-color: gray;
     color: black;
     top: 60%;
     left: 50%;
     position: absolute;
     transform: translate(-50%,-50%);
     box-sizing: border-box;
-    padding: 70px 30px
+    padding: 70px 30px;
+    margin-top: 80px;
 }
 
 /* Full-width input fields */
@@ -108,29 +109,44 @@ hr {
     width: 100%;
   }
 }
+.nav{
+    z-index: 99;
+}
     </style>
 </head>
 <body>
 
-     <!-- navbar -->
-     <div class="email">
-        <a href="#">openmymind@gmail.com</a>
-        </div>
-        
-        <nav class="nav">
-            <!-- <label class="logo">OpenMyMind</label> -->
-            <ul>
-                <li><a class="active" href="../">Home</a></li>
-                <li><a href="#">About Mental Health</a></li>
-                <li><a href="login.html">login</a></li>
-                <li><a href="services.html">Services</a></li>
-                <li><a href="contact.html">Contact</a></li>
-                <li><a href="blog.html">Blogs</a></li>
-                <li><a href="discussion_forums.html">Discussion Forums</a></li>
-                <li><a href="testimonials.html">Testimonials</a></li>
-                <button type="submit"><i class="fa fa-search"></i></button>
-            </ul>
-        </nav>
+     
+    <nav>
+       
+        <div class="logo">OpenMyMind</div>
+        <ul>
+            <li><a href="../">Home</a></li>  
+            <li><a href="#">About MH</a></li>
+            <li><a href="#">Features</a>
+                <ul>
+                    
+                    <li><a href="blog.html">Blogs</a></li>
+                    <li><a href="services.html">Services</a></li>
+                </ul>    
+            </li>  
+            <li><a href="#">Community</a>
+                <ul>
+                    <!-- <li><a href="discussion_forums.html">Chat room</a></li> -->
+                    <li><a href="chat.html">Chat room</a></li>
+                    <li><a href="testimonials.html">testimonials</a></li>
+                    <li><a href="#">Resources</a></li>
+                  
+                </ul>    
+            </li>  
+            
+            <li><a href="#questions">FAQs</a></li>
+            <li><a href="#">Feedback</a></li>
+            <!-- <li><a href="sign up.html">Sign Up</a></li> -->
+            <li><a href="contact.html">Contact</a></li>
+            <!-- <button type="submit"><i class="fa fa-search"></i></button> -->
+        </ul>
+    </nav>
 
     <form action="">
         <div class="signup-form">
@@ -159,6 +175,9 @@ hr {
 
         <input class="cancel-btn" type="Submit" name="" value="Cancel">
         <input class="login-btn" type="Submit" name="" value="Login">
+        <p>Already have an account?<a href="/pages/login.html">Login here!</a></p>
+
+        
     </div>
     </form>
 

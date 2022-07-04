@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chatroom</title>
+    <!-- google icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="/styles/style.css" />
+
+    <!-- CSS only -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+
+    <style>
+      body {
+        background: #fff;
+      }
+      .back-image {
+        margin-left: 300px;
+      }
+      .image-container {
+        display: grid;
+      }
+      .case {
+        margin-top: 10px;
+        /* grid-area: showcase; */
+        min-height: 400px;
+        background: url("/assets/images/img2.jpg");
+        background-size: cover;
+        background-position: center;
+        padding: 3rem;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        justify-content: center;
+        box-shadow: var(--shadow);
+        margin-right: 200px;
+        margin-left: 200px;
+      }
+      .class {
+        display: inline-block;
+        margin-right: 250px;
+      }
+      .lounge {
+        margin-left: 250px;
+        display: inline;
+        margin-top: 20px;
+      }
+      .button {
+        background-color: #df4881;
+        border: none;
+        color: white;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        cursor: pointer;
+        width: 20%;
+      }
+      .abdi ul li {
+        display: inline;
+        /* background-color: rebeccapurple; */
+        margin-left: 250px;
+        font-size: 2em;
+        cursor: pointer;
+      }
+      
+      .about-discussion {
+        /* background-color: #fff; */
+        margin-top: 50px;
+        margin-left: 50px;
+        margin-right: 50px;
+        display: grid;
+        grid-gap: 20px;
+        margin-left: 25%;
+        width: 50%;
+        grid-template-columns: repeat(1, 1fr);
+      }
+      .about-group {
+        background: #ddd;
+        text-align: center;
+        padding: 1.5rem 2rem;
+      }
+    
+    </style>
+  </head>
+  <body>
+    <!-- navbar -->
+    <nav>
+      <div class="logo">OpenMyMind</div>
+      <ul>
+        <li><a href="../">Home</a></li>
+        <li><a href="#">About MH</a></li>
+        <li>
+          <a href="#">Features</a>
+          <ul>
+            <li><a href="blog.html">Blogs</a></li>
+            <li><a href="services.html">Services</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#">Community</a>
+          <ul>
+            <!-- <li><a href="/pages/discussion_forums.html">Chat room</a></li> -->
+            <li><a href="chat.html">Chat room</a></li>
+            <li><a href="testimonials.html">testimonials</a></li>
+            <li><a href="#">Resources</a></li>
+          </ul>
+        </li>
+
+        <li><a href="#questions">FAQs</a></li>
+        <li><a href="#">Feedback</a></li>
+        <li><a href="sign up.html">Sign Up</a></li>
+        <li><a href="contact.html">Contact</a></li>
+
+        <!-- <button type="submit"><i class="fa fa-search"></i></button> -->
+      </ul>
+    </nav>
+
+    <!-- image container -->
+    <section class="image-container">
+      <header class="case">
+        <!-- <img src="/assets/images/img2.jpg" alt=""> -->
+        <h1>Mental Health Lounge</h1>
+        <p>A positive community for people struggling with mental health</p>
+      </header>
+
+      <div class="lounge">
+        <h1>Mental Health Lounge</h1>
+        <p class="class">
+          <i class="fa fa-lock" aria-hidden="true"></i> Private group &bull;
+          <strong>1.5K members</strong>
+        </p>
+        <button class="button">Join Group</button>
+        <select>
+          <option value="related groups">Related groups</option>
+          <option value="facebook">facebook</option>
+          <option value="anxiouslass">anxiouslass</option>
+        </select>
+      </div>
+      <hr />
+      
+      <div class="abdi">
+        <ul>
+          <li><a href="#about"></a>About</li>
+          <li><a href="#discussion"></a>Discussion</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- about and discussion -->
+    <!-- about -->
+    <section class="about-discussion">
+      <div class="about-group" id="about">
+        <p>
+          A closed safe group for people with Anxiety Grab a virtual cuppa and
+          come for a chat... <a href="...">see more</a>
+        </p>
+        <p>
+          <i class="fa fa-lock"></i> Private <br />
+          Only members can see who's in the group and what they post.
+        </p>
+        <p>
+          <i class="fa fa-eye" aria-hidden="true"></i> Visible <br />
+          Anyone can find this group.
+        </p>
+        <p><i class="fa fa-users" aria-hidden="true"></i> General</p>
+
+        <p>
+          <i class="fa fa-clock-o" aria-hidden="true"></i> History Group created
+          on 24th june 2022. Name last changed on 2 July 2022.
+        </p>
+      </div>
+
+      <div class="about-group">
+        <p><strong>Members </strong> &bull; 1.2K</p>
+      </div>
+
+      <div class="about-group">
+        <h1>Activity</h1>
+        <p>
+          <i class="fa fa-comments" aria-hidden="true"></i> No new posts today
+          10 in the last month
+        </p>
+        <p>
+          <i class="fa fa-users" aria-hidden="true"></i> 1,552 total members No
+          new members in the last week
+        </p>
+        <p>
+          <i class="fa fa-hourglass" aria-hidden="true"></i> Created on 1 month
+          ago
+        </p>
+      </div>
+
+      <div class="about-group">
+        <section id="questions" class="p-5 bg-#ddd">
+          <div class="container">
+            <h2 class="tect-center mb-4">Group rules from the admins</h2>
+            <div class="accordion accordion-flush" id="about">
+              <!-- Rule number 1 -->
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#question-one"
+                  >
+                    1. Be kind and courteous
+                  </button>
+                </h2>
+                <div
+                  id="question-one"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#accordionFlushExample"
+                >
+                  <div class="accordion-body">
+                    We're all in this together to create a welcoming
+                    environment. Let's treat everyone with respect. Healthy
+                    debates are natural, but kindness is required and let's keep
+                    our responses as positive as we can!
+                  </div>
+                </div>
+              </div>
+              <!-- Rule number 2 -->
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#question-two"
+                  >
+                    2. No hate speech or bullying
+                  </button>
+                </h2>
+                <div
+                  id="question-two"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#accordionFlushExample"
+                >
+                  <div class="accordion-body">
+                    Make sure everyone feels safe. Bullying of any kind isn't
+                    allowed, and degrading comments about things such as race,
+                    religion, culture, sexual orientation, gender or identity
+                    will not be tolerated.
+                  </div>
+                </div>
+              </div>
+              <!-- Rule number 3 -->
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#question-three"
+                  >
+                    3. No screenshot form inside the group
+                  </button>
+                </h2>
+                <div
+                  id="question-three"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#accordionFlushExample"
+                >
+                  <div class="accordion-body">
+                    This is so important. Being part of this group requires
+                    mutual trust. Authentic, expressive discussions make groups
+                    great, but may also be sensitive and private. What's shared
+                    in the group should stay in the group.
+                  </div>
+                </div>
+              </div>
+              <!-- Rule number 4 -->
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#question-four"
+                  >
+                    4.No spam
+                  </button>
+                </h2>
+                <div
+                  id="question-four"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#accordionFlushExample"
+                >
+                  <div class="accordion-body">
+                    Give more to this group than you take. Links are welcome as
+                    long as they are relevant to the group but please don't
+                    spam.
+                  </div>
+                </div>
+              </div>
+              <!-- Rule number 5 -->
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#question-five"
+                  >
+                    5. Friend Requests & Contacting Members Outside The group
+                  </button>
+                </h2>
+                <div
+                  id="question-five"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#accordionFlushExample"
+                >
+                  <div class="accordion-body">
+                    Please be mindful of sending friend requests to other
+                    members without permission. This is a closed group and we
+                    need to respect the privacy of others. Do NOT contact other
+                    members outside the group just to sell them something.
+                  </div>
+                </div>
+              </div>
+              <!-- Rule number 6 -->
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#question-five"
+                  >
+                    6. No selling
+                  </button>
+                </h2>
+                <div
+                  id="question-five"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#accordionFlushExample"
+                >
+                  <div class="accordion-body">
+                    Trying to sell to other members or recruiting them for MLM
+                    schemes will not be tolerated here.
+                  </div>
+                </div>
+              </div>
+
+              <!-- Rule number 7 -->
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#question-five"
+                  >
+                    5. Medical advices
+                  </button>
+                </h2>
+                <div
+                  id="question-five"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#accordionFlushExample"
+                >
+                  <div class="accordion-body">
+                    Please be open to our doctors/counsellors/therapists etc so
+                    that you may get a better advice or just go to the hospital
+                    if you feel unfree.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </section>
+
+    <!-- discussions -->
+    <section class="about-discussion">
+      <div class="about-group" id="discussion">
+        <i class="fa fa-lock fa-4x" aria-hidden="true"></i>
+        <h1>This group is private</h1>
+        <p>Join this group to view or participate in discussions.</p>
+      </div>
+    </section>
+
+    <!-- JavaScript Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
