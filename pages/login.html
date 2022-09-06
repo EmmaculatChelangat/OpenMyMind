@@ -1,109 +1,124 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- Load icon library -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
     <title>Login</title>
-    <link rel="stylesheet" href="../styles/login.css">
-    <link rel="stylesheet" href="../styles/style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="../styles/login.css" />
+    <link rel="stylesheet" href="../styles/style.css" />
+  </head>
+  <body>
     <!-- navbar -->
-   
-        <nav>
-            
-            <div class="logo">OpenMyMind</div>
-            <ul>
-                <li><a href="../">Home</a></li>  
-                <li><a href="#">About MH</a></li>
-                <li><a href="#">Features</a>
-                    <ul>
-                        
-                        <li><a href="blog.html">Blogs</a></li>
-                        <li><a href="services.html">Services</a></li>
-                    </ul>    
-                </li>  
-                <li><a href="#">Community</a>
-                    <ul>
-                        <!-- <li><a href="discussion_forums.html">Chat room</a></li> -->
-                        <li><a href="chat.html">Chat room</a></li>
-                        <li><a href="testimonials.html">testimonials</a></li>
-                        <li><a href="#">Resources</a></li>
-                      
-                    </ul>    
-                </li>  
-                
-                <li><a href="#questions">FAQs</a></li>
-                <li><a href="#">Feedback</a></li>
-                <!-- <li><a href="sign up.html">Sign Up</a></li> -->
-                <li><a href="contact.html">Contact</a></li>
-                <!-- <button type="submit"><i class="fa fa-search"></i></button> -->
-            </ul>
-        </nav>
 
-        <!-- login form -->
+    <nav>
+      <div class="logo">OpenMyMind</div>
+      <ul>
+        <li><a href="../">Home</a></li>
+        <li><a href="about.html">About MH</a></li>
+        <li>
+          <a href="#">Features</a>
+          <ul>
+            <li><a href="blog.html">Blogs</a></li>
+            <li><a href="services.html">Services</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#">Community</a>
+          <ul>
+            <!-- <li><a href="discussion_forums.html">Chat room</a></li> -->
+            <li><a href="chat.html">Chat room</a></li>
+            <li><a href="testimonials.html">testimonials</a></li>
+            <li><a href="resources.html">Resources</a></li>
+          </ul>
+        </li>
+
+        <!-- <li><a href="#questions">FAQs</a></li> -->
+        <li><a href="feedback.html">Feedback</a></li>
+        <!-- <li><a href="sign up.html">Sign Up</a></li> -->
+        <li><a href="contact.html">Contact</a></li>
+        <!-- <button type="submit"><i class="fa fa-search"></i></button> -->
+      </ul>
+    </nav>
+
+    <!-- login form -->
     <div class="log-inbox">
-        <img class="avatar" src="/assets/images/avatar.png" alt="avatar">
-        <h1>Login Here</h1>
-        <form action="">
-            <p>Username</p>
-            <input type="text" name="" placeholder="Enter Username" required>
-            <p>Password</p>
-            <input type="text" name="" placeholder="Enter Password" required>
-            <input type="Submit" name="" value="Login">
-            <br>
-            <a href="#">Lost your Password?</a>
-            <br>
-            
-
-        </form>
+      <img class="avatar" src="/assets/images/avatar.png" alt="avatar" />
+      <h1>Login Here</h1>
+      <form action="join.html">
+        <p>Email</p>
+        <input type="email" name="" placeholder="Enter Email" required />
+        <p>Password</p>
+        <input type="password" name="" placeholder="Enter Password" required />
+        <a href="/pages/blog.html"
+          ><input type="Submit" name="" value="Login"
+        /></a>
+        <br />
+        <a href="#">Lost your Password?</a>
+        <br />
+      </form>
     </div>
 
     <!-- footer -->
     <section>
-        <footer>
-            <footer class="footer" style="margin-top: 600px;">
-                <div class="container2">
-                    <div class="row2">
-                        <div class="footer-col">
-                            <h4>Company</h4>
-                            <ul>
-                                <li><a href="#"></a>About Us</li>
-                                <li><a href="#"></a>Our services</li>
-                                <li><a href="#"></a>privacy policy</li>
-                                <li><a href="#"></a>affiliate program </li>
-                            </ul>
-                        </div>
-                        <div class="footer-col">
-                            <h4>get help</h4>
-                            <ul>
-                                <li><a href="#"></a>FAQ</li>
-                                <!-- <li><a href="#"></a>shipping fee</li> -->
-                                <li><a href="#"></a>returns</li>
-                                <li><a href="#"></a>order status</li>
-                                <li><a href="#"></a>payment options</li>
-                            </ul>
-                        </div>
-                       
-                        <div class="footer-col">
-                            <h4>Follow Us</h4>
-                            <div class="social-links">
-                                <a href="https://github.com/EmmaculatChelangat/EmmaculatChelangat.git"><i class="fab fa-github"></i></a>
-                                <a href="https://www.linkedin.com/in/emmaculat-chelangat-57696a230?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BvuSKlLITQfGX3QvOju759Q%3D%3D"><i class="fab fa-linkedin-in"></i></a>
-                                <a href="https://twitter.com/chelaathecoder/status/1531721118737997824?t=7RtVofOdj1-rGsEe41NHew&s=19"><i class="fab fa-twitter"></i></a>
-                                <a href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=chelangatemmaculat2744@gmail.com"><i class="fa-solid fa-envelope"></i></a>
-                                <a href="https://www.facebook.com/sharer/sharer.php?u=chelangatemmaculat"><i class="fab fa-facebook"></i></a>
-                            </div>
-                        </div>
-                    </div>
+      <footer>
+        <footer class="footer" style="margin-top: 600px">
+          <div class="container2">
+            <div class="row2">
+              <div class="footer-col">
+                <h4>Company</h4>
+                <ul>
+                  <li><a href="about.html"></a>About Us</li>
+                  <li><a href="services.html"></a>Our services</li>
+                  <li><a href="chat.html"></a>privacy policy</li>
+                  <li><a href="#"></a>affiliate program</li>
+                </ul>
+              </div>
+              <div class="footer-col">
+                <h4>get help</h4>
+                <ul>
+                  <!-- <li><a href="#"></a>FAQ</li> -->
+                  <!-- <li><a href="#"></a>shipping fee</li> -->
+                  <li><a href="#"></a>returns</li>
+                  <li><a href="#"></a>order status</li>
+                  <li><a href="#"></a>payment options</li>
+                </ul>
+              </div>
+
+              <div class="footer-col">
+                <h4>Follow Us</h4>
+                <div class="social-links">
+                  <a
+                    href="https://github.com/EmmaculatChelangat/EmmaculatChelangat.git"
+                    ><i class="fab fa-github"></i
+                  ></a>
+                  <a
+                    href="https://www.linkedin.com/in/emmaculat-chelangat-57696a230?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BvuSKlLITQfGX3QvOju759Q%3D%3D"
+                    ><i class="fab fa-linkedin-in"></i
+                  ></a>
+                  <a
+                    href="https://twitter.com/chelaathecoder/status/1531721118737997824?t=7RtVofOdj1-rGsEe41NHew&s=19"
+                    ><i class="fab fa-twitter"></i
+                  ></a>
+                  <a
+                    href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=chelangatemmaculat2744@gmail.com"
+                    ><i class="fa-solid fa-envelope"></i
+                  ></a>
+                  <a
+                    href="https://www.facebook.com/sharer/sharer.php?u=chelangatemmaculat"
+                    ><i class="fab fa-facebook"></i
+                  ></a>
                 </div>
-            </footer>    
+              </div>
+            </div>
+          </div>
         </footer>
+      </footer>
     </section>
- 
-    
-</body>
+  </body>
 </html>

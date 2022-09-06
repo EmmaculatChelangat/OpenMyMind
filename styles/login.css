@@ -56,7 +56,7 @@ h1{
     width: 100%;
     margin-bottom: 20px;
 }
-.log-inbox input[type="text"], input[type="password"]
+.log-inbox input[type="email"], input[type="password"]
 {
     /* border: none;
     border-bottom: 1px solid #fff;

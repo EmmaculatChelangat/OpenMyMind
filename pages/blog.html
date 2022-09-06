@@ -1,407 +1,507 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Blogs</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="/styles/style.css">
-    
-</head>
-<style>
-    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Roboto:ital@1&family=Sofia&display=swap');
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="/styles/style.css" />
+  </head>
+  <style>
+    @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Roboto:ital@1&family=Sofia&display=swap");
 
-html{
-    box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
-    color: var(--dark);
-}
-
-body{
-    background: #ccc;
-    /* margin: 30px 50px; */
-    line-height: 1.4;
-}
-.btn{
-    background: #333;
-    color: #ccc;
-    /* 1rem=14px--rem is responsive */
-    padding: 0.6rem 1.3rem;
-    text-decoration: none;
-    border: 0;
-}
-img{
-    max-width: 100%;
-}
-.wrapper{
-    /* margin-top: 100px; */
-    /* padding-top: 100px; */
-    padding-bottom: 100px;
-    display: grid;
-    grid-gap: 20px;
-
-    /* margin: 30px 50px; */
-}
-.blog-head{
-    text-align: center;
-    font-size: 35px;
-    padding: 20px 0;
-    color: white;
-    margin-top: 10px;
-    text-align: center;
-    font-variant: small-caps;
-    font-weight: 700;
-    font-size: 3.1em;
-    font-family: "Poppins", sans-serif;
-    /* color: white; */
-    text-shadow: 3px 3px 3px #eb7171;
-}
-/* top container */
-.top-container{
-    
-    display: grid;
-    grid-gap: 20px;
-    grid-template-areas: 
-        'showcase showcase top-box-a'
-        'showcase showcase top-box-b';
-}
-/* showcase */
-.showcase{
-    margin-top: 10px;
-    grid-area: showcase;
-    min-height: 400px;
-    background: url("/assets/images/img6.jpg");
-    background-size: cover;
-    background-position: center;
-    padding: 3rem;
-    display: flex;
-    flex-direction: column;
-    align-items: start;
-    justify-content: center;
-    box-shadow: var(--shadow);
-}
-.showcase h1{
-    font-size: 4rem;
-    margin-bottom: 0;
-    /* color: black; */
-    /* lower case are converted to uppercase */
-    font-variant: small-caps;
-    /* font-family: 'Poppins', sans-serif; */
-    /* font-family: 'Roboto', sans-serif; */
-    font-family: 'Sofia', cursive;
-    /* text-shadow: 3px 3px 3px #ababab; */
-    text-shadow: 10px 3px 3px #ababab;
-}
-.showcase p{
-    font-size: 1.3rem;
-    margin-top: 0; 
-    color: black;
-    font-family: 'Poppins', sans-serif;
-     
-}
-/* top Box */
-.top-box{
-    /* margin-left: 50px; */
-    background: #fff;
-    display: grid;
-    justify-items: center;
-    padding: 1.5rem;
-}
-
-.top-box-a {
-    margin-top: 10px;
-    grid-area: top-box-a;
-}
-.top-box-b {
-    grid-area: top-box-b;
-}
-
-/* boxes */
-.boxes{
-    margin-top: 50px;
-    margin-left: 50px;
-    margin-right: 50px;
-    display: grid;
-    grid-gap: 20px;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-
-}
-.blog-life{
-    text-align: center;
-    padding-top: 50px;
-    text-decoration: underline;
-
-
-}
-.box{
-    background: #fff;
-    text-align: center;
-    padding: 1.5rem 2rem;
-}
-/* info */
-.info{
-    margin-left: 50px;
-    margin-right: 50px;
-    font-family: 'Roboto', sans-serif;
-    margin-top: 50px;
-    background: #ccc;
-    display: grid;
-    grid-gap: 30px;
-    grid-template-columns: repeat(2, 1fr);
-    
-    /* grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); */
-    /* padding: 3rem; */
-}
-.inform{
-    font-family: 'Roboto', sans-serif;
-    background: #fff;
-    text-align: center;
-    padding: 1.5rem 2rem;
-}
-
-.back-icon{
-    margin-left: 40px;
-    text-decoration: none;
-    
-}
-.back-icon a:link { 
-    text-decoration: none;
- }
-
-.back-icon a:visited { text-decoration: none; }
-
-
-.back-icon a:hover { 
-    text-decoration: #df4881; }
-
-
-.back-icon a:active { text-decoration: none; }
-
-
-@media(max-width:700px){
-    .top-container{
-       grid-template-areas: 
-       'showcase showcase'
-       'top-box-a top-box-b'; 
+    html {
+      box-sizing: border-box;
+      font-family: Arial, Helvetica, sans-serif;
+      color: var(--dark);
     }
-    .showcase h1{
+
+    body {
+      background: #ccc;
+      /* margin: 30px 50px; */
+      line-height: 1.4;
+    }
+    .btn {
+      background: #333;
+      color: #ccc;
+      /* 1rem=14px--rem is responsive */
+      padding: 0.6rem 1.3rem;
+      text-decoration: none;
+      border: 0;
+    }
+    img {
+      max-width: 100%;
+    }
+    .wrapper {
+      /* margin-top: 100px; */
+      /* padding-top: 100px; */
+      padding-bottom: 100px;
+      display: grid;
+      grid-gap: 20px;
+
+      /* margin: 30px 50px; */
+    }
+    .blog-head {
+      text-align: center;
+      font-size: 35px;
+      padding: 20px 0;
+      color: white;
+      margin-top: 10px;
+      text-align: center;
+      font-variant: small-caps;
+      font-weight: 700;
+      font-size: 3.1em;
+      font-family: "Poppins", sans-serif;
+      /* color: white; */
+      text-shadow: 3px 3px 3px #eb7171;
+    }
+    /* top container */
+    .top-container {
+      display: grid;
+      grid-gap: 20px;
+      grid-template-areas:
+        "showcase showcase top-box-a"
+        "showcase showcase top-box-b";
+    }
+    /* showcase */
+    .showcase {
+      margin-top: 10px;
+      grid-area: showcase;
+      min-height: 400px;
+      background: url("/assets/images/img6.jpg");
+      background-size: cover;
+      background-position: center;
+      padding: 3rem;
+      display: flex;
+      flex-direction: column;
+      align-items: start;
+      justify-content: center;
+      box-shadow: var(--shadow);
+    }
+    .showcase h1 {
+      font-size: 4rem;
+      margin-bottom: 0;
+      /* color: black; */
+      /* lower case are converted to uppercase */
+      font-variant: small-caps;
+      /* font-family: 'Poppins', sans-serif; */
+      /* font-family: 'Roboto', sans-serif; */
+      font-family: "Sofia", cursive;
+      /* text-shadow: 3px 3px 3px #ababab; */
+      text-shadow: 10px 3px 3px #ababab;
+    }
+    .showcase p {
+      font-size: 1.3rem;
+      margin-top: 0;
+      color: black;
+      font-family: "Poppins", sans-serif;
+    }
+    /* top Box */
+    .top-box {
+      /* margin-left: 50px; */
+      background: #fff;
+      display: grid;
+      justify-items: center;
+      padding: 1.5rem;
+    }
+
+    .top-box-a {
+      margin-top: 10px;
+      grid-area: top-box-a;
+    }
+    .top-box-b {
+      grid-area: top-box-b;
+    }
+
+    /* boxes */
+    .boxes {
+      margin-top: 50px;
+      margin-left: 50px;
+      margin-right: 50px;
+      display: grid;
+      grid-gap: 20px;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+    .blog-life {
+      text-align: center;
+      padding-top: 50px;
+      text-decoration: underline;
+    }
+    .box {
+      background: #fff;
+      text-align: center;
+      padding: 1.5rem 2rem;
+    }
+    /* info */
+    .info {
+      margin-left: 50px;
+      margin-right: 50px;
+      font-family: "Roboto", sans-serif;
+      margin-top: 50px;
+      background: #ccc;
+      display: grid;
+      grid-gap: 30px;
+      grid-template-columns: repeat(2, 1fr);
+
+      /* grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); */
+      /* padding: 3rem; */
+    }
+    .inform {
+      font-family: "Roboto", sans-serif;
+      background: #fff;
+      text-align: center;
+      padding: 1.5rem 2rem;
+    }
+
+    .back-icon {
+      margin-left: 40px;
+      text-decoration: none;
+    }
+    .back-icon a:link {
+      text-decoration: none;
+    }
+
+    .back-icon a:visited {
+      text-decoration: none;
+    }
+
+    .back-icon a:hover {
+      text-decoration: #df4881;
+    }
+
+    .back-icon a:active {
+      text-decoration: none;
+    }
+
+    @media (max-width: 700px) {
+      .top-container {
+        grid-template-areas:
+          "showcase showcase"
+          "top-box-a top-box-b";
+      }
+      .showcase h1 {
         font-size: 2.5rem;
-    }
-    .info{
+      }
+      .info {
         grid-template-columns: 1fr;
-    }
-    .info .btn{
+      }
+      .info .btn {
         display: block;
         text-align: center;
         margin: auto;
+      }
     }
-}
-@media(max-width:700px){
-    .top-container{
-       grid-template-areas: 
-       'showcase '
-       'top-box-a '
-       'top-box-b'; 
+    @media (max-width: 700px) {
+      .top-container {
+        grid-template-areas:
+          "showcase "
+          "top-box-a "
+          "top-box-b";
+      }
     }
-}
-
-</style>
-<body>
-   
+  </style>
+  <body>
     <nav>
-     
-        <div class="logo">OpenMyMind</div>
-        <ul>
-            <li><a href="../">Home</a></li> 
-            <li><a href="#">About MH</a></li> 
-            <li><a href="#">Features</a>
-                <ul>
-                    
-                    <li><a href="blog.html">Blogs</a></li>
-                    <li><a href="services.html">Services</a></li>
-                </ul>    
-            </li>  
-            <li><a href="#">Community</a>
-                <ul>
-                    <!-- <li><a href="discussion_forums.html">Chat room</a></li> -->
-                    <li><a href="chat.html">Chat room</a></li>
-                    <li><a href="testimonials.html">testimonials</a></li>
-                    <li><a href="#">Resources</a></li>
-                  
-                </ul>    
-            </li>  
-            
-            <li><a href="#questions">FAQs</a></li>
-            <li><a href="#">Feedback</a></li>
-            <li><a href="sign up.html">Sign Up</a></li>
-            <li><a href="contact.html">Contact</a></li>
-            <!-- <button type="submit"><i class="fa fa-search"></i></button> -->
-        </ul>
+      <div class="logo">OpenMyMind</div>
+      <ul>
+        <li><a href="../">Home</a></li>
+        <li><a href="about.html">About MH</a></li>
+        <li>
+          <a href="#">Features</a>
+          <ul>
+            <li><a href="blog.html">Blogs</a></li>
+            <li><a href="services.html">Services</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#">Community</a>
+          <ul>
+            <!-- <li><a href="discussion_forums.html">Chat room</a></li> -->
+            <li><a href="chat.html">Chat room</a></li>
+            <li><a href="testimonials.html">testimonials</a></li>
+            <li><a href="resources.html">Resources</a></li>
+          </ul>
+        </li>
+
+        <!-- <li><a href="#questions">FAQs</a></li> -->
+        <li><a href="feedback.html">Feedback</a></li>
+        <li><a href="sign up.html">Sign Up</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <!-- <button type="submit"><i class="fa fa-search"></i></button> -->
+      </ul>
     </nav>
 
-
-
-
- <!-- top container -->
- <h1 class="blog-head">Blogs</h1>
- <section class="top-container">
-    <header class="showcase">
+    <!-- top container -->
+    <h1 class="blog-head">Blogs</h1>
+    <section class="top-container">
+      <header class="showcase">
         <h1>mental health</h1>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet ut sequi consequuntur, quam aperiam magnam?</p>
-        <a href="#" class="btn">Read More</a>
-    </header>
+        <p>
+            Anything that's human is mentionable, and anything that is mentionable can be more manageable. When we can talk about our feelings, they become less overwhelming, less upsetting, and less scary.
+        </p>
+        <a href="https://mentalhealthmatch.com/articles/anxiety/inspiring-mental-health-quotes" class="btn">Read More</a>
+      </header>
 
-    <div class="top-box top-box-a">
+      <div class="top-box top-box-a">
         <h2>Welcome</h2>
-        <p class="description">Welcome to my lifestyle & mental health blog, where I speak candidly about mental health, chronic illness and the general ups and downs of life.</p>
+        <p class="description">
+          Welcome to my lifestyle & mental health blog, where I speak candidly
+          about mental health, chronic illness and the general ups and downs of
+          life.
+        </p>
         <a href="#" class="btn">Read More</a>
-    </div>
+      </div>
 
-    <div class="top-box top-box-b">
+      <div class="top-box top-box-b">
         <h3>social links</h3>
-            <div class="social-links">
-                <a href="https://github.com/EmmaculatChelangat/EmmaculatChelangat.git"><i class="fab fa-github"></i></a>
-                <a href="https://www.linkedin.com/in/emmaculat-chelangat-57696a230?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BvuSKlLITQfGX3QvOju759Q%3D%3D"><i class="fab fa-linkedin-in"></i></a>
-                <a href="https://twitter.com/chelaathecoder/status/1531721118737997824?t=7RtVofOdj1-rGsEe41NHew&s=19"><i class="fab fa-twitter"></i></a>
-                <a href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=chelangatemmaculat2744@gmail.com"><i class="fa-solid fa-envelope"></i></a>
-                <a href="https://www.facebook.com/sharer/sharer.php?u=chelangatemmaculat"><i class="fab fa-facebook"></i></a>
-            </div>
-    </div>
-</section>
-
-<!-- Boxes Section -->
-<section class="boxes">
-    <div class="box">
-        <i class="fa fa-pie-chart fa-4x" aria-hidden="true"></i>
-        <h3>Analytics</h3>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reiciendis, adipisci?</p>
-    </div>
-
-    <div class="box">
-        <i class="fa fa-globe fa-4x" aria-hidden="true"></i>
-        <h3>Marketing</h3>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reiciendis, adipisci?</p>
-    </div>
-
-    <div class="box">
-        <i class="fa fa-cog fa-4x" aria-hidden="true"></i>
-        <h3>Development</h3>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reiciendis, adipisci?</p>
-    </div>
-
-    <div class="box">
-        <i class="fa fa-users fa-4x" aria-hidden="true"></i>
-        <h3>Support</h3>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reiciendis, adipisci?</p>
-    </div>
-
-</section>
-
-<!--  -->
-<h2 class="blog-life">life</h2>
-<!-- info section -->
-<section class="info">
-
-    <div class="inform">
-    <img src="/assets/images/img7.jpg" alt="">
-  
-            <a href="https://miss-mental.com/100-life-goals-free-goal-planner/"><h2>100 LIFE GOALS(WITH FREE GOAL PLANNER)</h2></a>
-            <p>Do you want a motivating list of goals, that consists of things you know you can actually achieve in the near future? Well, in this post I've rounded up 100 life goals which are a...</p>
-            <a href="https://miss-mental.com/100-life-goals-free-goal-planner/" class="btn">Learn More</a>
-    </div>
-
-
-    <div class="inform">
-    <img src="/assets/images/img8.jpg" alt="">
-        <a href="https://www.goodbyeselfhelp.com/things-to-do-when-bored-at-night/"><h2>21 THINGS TO DO WHEN BORED AT NIGHT</h2></a>
-        <p>If you're like me and struggle with insomnia, it can be super frustrating trying to think of things to do when bored at night. No one wants to be lying in bed doing nothing for...</p>
-        <a href="https://www.goodbyeselfhelp.com/things-to-do-when-bored-at-night/" class="btn">Learn More</a>
-    </div>
-
-
-    <div class="inform">
-    <img src="/assets/images/img6.jpg" alt="">
-        <a href="https://anxiouslass.com/managing-mental-health-at-christmas/"><h2>5 QUICK TIPS FOR MANAGING MENTAL HEALTH AT CHRISTMAS</h2></a>
-        <p>Managing mental health at Christmas can be tough. It's such a busy time of year. There's LOTS of socialising, drinking, eating and pressure to spend money. While it is a magical time for many, it...</p>
-        <a href="https://anxiouslass.com/managing-mental-health-at-christmas/" class="btn">Learn More</a>
-    </div>
-
-
-    <div class="inform">
-    <img src="/assets/images/img7.jpg" alt="">
-        <a href="https://anxiouslass.com/lying-because-of-social-anxiety/"><h2>LYING BECAUSE OF SOCIAL ANXIETY</h2></a>
-        <p>I spent years lying because of social anxiety. Not in a malicious way or in a way to hurt and deceive people but because of the way that social anxiety had deceived me. The truth...</p>
-        <a href="https://anxiouslass.com/lying-because-of-social-anxiety/" class="btn">Learn More</a>
-    </div>
-
-
-    <div class="inform">
-    <img src="/assets/images/img8.jpg" alt="">
-        <a href="https://anxiouslass.com/50-self-harm-alternatives/"><h2>50 SELF HARM ALTERNATIVES THAT WON'T MAKE THINGS WORSE</h2></a>
-        <p>Not all self harm alternatives are made equally. Often when you search for self harm alternatives or you're given advice to try something different from self harm, you are told to hold an ice cube...</p>
-        <a href="https://anxiouslass.com/50-self-harm-alternatives/" class="btn">Learn More</a>
-    </div>
-
-    <div class="inform">
-    <img src="/assets/images/img5.jpg" alt="" height="330px" width="560px">
-        <a href="https://www.mentalhealth.org.uk/explore-mental-health/publications/how-look-after-your-mental-health"><h2>How to look after your mental health</h2></a>
-        <p>Talk about your feelings. Talking about your feelings can help you stay in good mental health and deal with times when you feel troubled....</p>
-        <a href="https://www.mentalhealth.org.uk/explore-mental-health/publications/how-look-after-your-mental-health" class="btn">Learn More</a>
-    </div>
-</section> 
-
-
-    <div class="back-icon">
-        <a  href="#"><i class="fa fa-chevron-left fa-4x" aria-hidden="true"></i><i class="fa fa-chevron-left fa-4x" aria-hidden="true"><strong style="font-size: 1.6rem">OlDER POSTS</strong> </i></a> 
-    </div>
-
-
-
-     <!-- footer -->
-     <section>
-        <footer>
-            <footer class="footer">
-                <div class="container2">
-                    <div class="row2">
-                        <div class="footer-col">
-                            <h4>Company</h4>
-                            <ul>
-                                <li><a href="#"></a>About Us</li>
-                                <li><a href="services.html"></a>Our services</li>
-                                <li><a href="#"></a>privacy policy</li>
-                                <li><a href="#"></a>affiliate program </li>
-                            </ul>
-                        </div>
-
-                        <div class="footer-col">
-                            <h4>get help</h4>
-                            <ul>
-                                <li><a href="#questions"></a>FAQ</li>
-                                <!-- <li><a href="#"></a>shipping fee</li> -->
-                                <li><a href="#"></a>returns</li>
-                                <li><a href="#"></a>order status</li>
-                                <li><a href="#"></a>payment options</li>
-                            </ul>
-                        </div>
-                       
-                        <div class="footer-col">
-                            <h4>Follow Us</h4>
-                            <div class="social-links">
-                                <a href="https://github.com/EmmaculatChelangat/EmmaculatChelangat.git"><i class="fab fa-github"></i></a>
-                                <a href="https://www.linkedin.com/in/emmaculat-chelangat-57696a230?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BvuSKlLITQfGX3QvOju759Q%3D%3D"><i class="fab fa-linkedin-in"></i></a>
-                                <a href="https://twitter.com/chelaathecoder/status/1531721118737997824?t=7RtVofOdj1-rGsEe41NHew&s=19"><i class="fab fa-twitter"></i></a>
-                                <a href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=chelangatemmaculat2744@gmail.com"><i class="fa-solid fa-envelope"></i></a>
-                                <a href="https://www.facebook.com/sharer/sharer.php?u=chelangatemmaculat"><i class="fab fa-facebook"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </footer>    
-        </footer>
+        <div class="social-links">
+          <a href="https://github.com/EmmaculatChelangat/EmmaculatChelangat.git"
+            ><i class="fab fa-github"></i
+          ></a>
+          <a
+            href="https://www.linkedin.com/in/emmaculat-chelangat-57696a230?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BvuSKlLITQfGX3QvOju759Q%3D%3D"
+            ><i class="fab fa-linkedin-in"></i
+          ></a>
+          <a
+            href="https://twitter.com/chelaathecoder/status/1531721118737997824?t=7RtVofOdj1-rGsEe41NHew&s=19"
+            ><i class="fab fa-twitter"></i
+          ></a>
+          <a
+            href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=chelangatemmaculat2744@gmail.com"
+            ><i class="fa-solid fa-envelope"></i
+          ></a>
+          <a
+            href="https://www.facebook.com/sharer/sharer.php?u=chelangatemmaculat"
+            ><i class="fab fa-facebook"></i
+          ></a>
+        </div>
+      </div>
     </section>
 
+    <!-- Boxes Section -->
+    <section class="boxes">
+      <div class="box">
+        <i class="fa fa-pie-chart fa-4x" aria-hidden="true"></i>
+        <h3>Analytics</h3>
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reiciendis,
+          adipisci?
+        </p>
+      </div>
 
-    
-</body>
+      <div class="box">
+        <i class="fa fa-globe fa-4x" aria-hidden="true"></i>
+        <h3>Marketing</h3>
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reiciendis,
+          adipisci?
+        </p>
+      </div>
+
+      <div class="box">
+        <i class="fa fa-cog fa-4x" aria-hidden="true"></i>
+        <h3>Development</h3>
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reiciendis,
+          adipisci?
+        </p>
+      </div>
+
+      <div class="box">
+        <i class="fa fa-users fa-4x" aria-hidden="true"></i>
+        <h3>Support</h3>
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reiciendis,
+          adipisci?
+        </p>
+      </div>
+    </section>
+
+    <!--  -->
+    <h2 class="blog-life">life</h2>
+    <!-- info section -->
+    <section class="info">
+      <div class="inform">
+        <img src="/assets/images/img7.jpg" alt="" />
+
+        <a href="https://miss-mental.com/100-life-goals-free-goal-planner/"
+          ><h2>100 LIFE GOALS(WITH FREE GOAL PLANNER)</h2></a
+        >
+        <p>
+          Do you want a motivating list of goals, that consists of things you
+          know you can actually achieve in the near future? Well, in this post
+          I've rounded up 100 life goals which are a...
+        </p>
+        <a
+          href="https://miss-mental.com/100-life-goals-free-goal-planner/"
+          class="btn"
+          >Learn More</a
+        >
+      </div>
+
+      <div class="inform">
+        <img src="/assets/images/img8.jpg" alt="" />
+        <a
+          href="https://www.goodbyeselfhelp.com/things-to-do-when-bored-at-night/"
+          ><h2>21 THINGS TO DO WHEN BORED AT NIGHT</h2></a
+        >
+        <p>
+          If you're like me and struggle with insomnia, it can be super
+          frustrating trying to think of things to do when bored at night. No
+          one wants to be lying in bed doing nothing for...
+        </p>
+        <a
+          href="https://www.goodbyeselfhelp.com/things-to-do-when-bored-at-night/"
+          class="btn"
+          >Learn More</a
+        >
+      </div>
+
+      <div class="inform">
+        <img src="/assets/images/img6.jpg" alt="" />
+        <a href="https://anxiouslass.com/managing-mental-health-at-christmas/"
+          ><h2>5 QUICK TIPS FOR MANAGING MENTAL HEALTH AT CHRISTMAS</h2></a
+        >
+        <p>
+          Managing mental health at Christmas can be tough. It's such a busy
+          time of year. There's LOTS of socialising, drinking, eating and
+          pressure to spend money. While it is a magical time for many, it...
+        </p>
+        <a
+          href="https://anxiouslass.com/managing-mental-health-at-christmas/"
+          class="btn"
+          >Learn More</a
+        >
+      </div>
+
+      <div class="inform">
+        <img src="/assets/images/img7.jpg" alt="" />
+        <a href="https://anxiouslass.com/lying-because-of-social-anxiety/"
+          ><h2>LYING BECAUSE OF SOCIAL ANXIETY</h2></a
+        >
+        <p>
+          I spent years lying because of social anxiety. Not in a malicious way
+          or in a way to hurt and deceive people but because of the way that
+          social anxiety had deceived me. The truth...
+        </p>
+        <a
+          href="https://anxiouslass.com/lying-because-of-social-anxiety/"
+          class="btn"
+          >Learn More</a
+        >
+      </div>
+
+      <div class="inform">
+        <img src="/assets/images/img8.jpg" alt="" />
+        <a href="https://anxiouslass.com/50-self-harm-alternatives/"
+          ><h2>50 SELF HARM ALTERNATIVES THAT WON'T MAKE THINGS WORSE</h2></a
+        >
+        <p>
+          Not all self harm alternatives are made equally. Often when you search
+          for self harm alternatives or you're given advice to try something
+          different from self harm, you are told to hold an ice cube...
+        </p>
+        <a href="https://anxiouslass.com/50-self-harm-alternatives/" class="btn"
+          >Learn More</a
+        >
+      </div>
+
+      <div class="inform">
+        <img
+          src="/assets/images/img5.jpg"
+          alt=""
+          height="330px"
+          width="560px"
+        />
+        <a
+          href="https://www.mentalhealth.org.uk/explore-mental-health/publications/how-look-after-your-mental-health"
+          ><h2>How to look after your mental health</h2></a
+        >
+        <p>
+          Talk about your feelings. Talking about your feelings can help you
+          stay in good mental health and deal with times when you feel
+          troubled....
+        </p>
+        <a
+          href="https://www.mentalhealth.org.uk/explore-mental-health/publications/how-look-after-your-mental-health"
+          class="btn"
+          >Learn More</a
+        >
+      </div>
+    </section>
+
+    <div class="back-icon">
+      <a href="#"
+        ><i class="fa fa-chevron-left fa-4x" aria-hidden="true"></i
+        ><i class="fa fa-chevron-left fa-4x" aria-hidden="true"
+          ><strong style="font-size: 1.6rem">OlDER POSTS</strong>
+        </i></a
+      >
+    </div>
+
+    <!-- footer -->
+    <section>
+      <footer>
+        <footer class="footer">
+          <div class="container2">
+            <div class="row2">
+              <div class="footer-col">
+                <h4>Company</h4>
+                <ul>
+                  <li><a href="about.html"></a>About Us</li>
+                  <li><a href="services.html"></a>Our services</li>
+                  <li><a href="chat.html"></a>privacy policy</li>
+                  <li><a href="#"></a>affiliate program</li>
+                </ul>
+              </div>
+
+              <div class="footer-col">
+                <h4>get help</h4>
+                <ul>
+                  <!-- <li><a href="#questions"></a>FAQ</li> -->
+                  <!-- <li><a href="#"></a>shipping fee</li> -->
+                  <li><a href="#"></a>returns</li>
+                  <li><a href="#"></a>order status</li>
+                  <li><a href="#"></a>payment options</li>
+                </ul>
+              </div>
+
+              <div class="footer-col">
+                <h4>Follow Us</h4>
+                <div class="social-links">
+                  <a
+                    href="https://github.com/EmmaculatChelangat/EmmaculatChelangat.git"
+                    ><i class="fab fa-github"></i
+                  ></a>
+                  <a
+                    href="https://www.linkedin.com/in/emmaculat-chelangat-57696a230?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BvuSKlLITQfGX3QvOju759Q%3D%3D"
+                    ><i class="fab fa-linkedin-in"></i
+                  ></a>
+                  <a
+                    href="https://twitter.com/chelaathecoder/status/1531721118737997824?t=7RtVofOdj1-rGsEe41NHew&s=19"
+                    ><i class="fab fa-twitter"></i
+                  ></a>
+                  <a
+                    href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=chelangatemmaculat2744@gmail.com"
+                    ><i class="fa-solid fa-envelope"></i
+                  ></a>
+                  <a
+                    href="https://www.facebook.com/sharer/sharer.php?u=chelangatemmaculat"
+                    ><i class="fab fa-facebook"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </footer>
+      </footer>
+    </section>
+  </body>
 </html>

@@ -36,6 +36,7 @@
 nav{
     background: gray;
     
+    position: sticky;
 }
 nav::after{
     content: '';
@@ -56,7 +57,7 @@ nav::after{
 nav ul{
     float: right;
     list-style: none;
-    position: relative;
+    /* position: relative; */
     margin-right: 40px;
     
 }
@@ -197,6 +198,7 @@ ul{
 .footer-col ul li a{
     font-size: 16px;
     text-transform: capitalize;
+    cursor: pointer;
 }
 /* body */
 body{
