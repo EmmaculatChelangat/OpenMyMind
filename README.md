@@ -8,6 +8,7 @@ This is a mental health website created using HTML, CSS and JS
 -how to use and installation
 -Technologies
 -References
+-Author info
 
 *** Description***
 ***OpenMyMind*** is a mental health website through which it helps connect people suffering from mental health disorders or those people who need to help 
