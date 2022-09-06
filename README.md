@@ -10,11 +10,11 @@ This is a mental health website created using HTML, CSS and JS
 -References
 -Author info
 
-*** Description***
+***Description***
 ***OpenMyMind*** is a mental health website through which it helps connect people suffering from mental health disorders or those people who need to help 
 the affected people find psychologist, counsellors and therapist online.
 
-*** How to Use ***
+***How to Use***
 Install extension live server on editor the Go live! 
 Displayed in the browser
 
